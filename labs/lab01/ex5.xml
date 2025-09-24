@@ -21,9 +21,9 @@
     <title>Machine learning 2</title>
     <description>This course covers advanced topics of ml.</description>
     <professor>Dr. Max Muller</professor>
-    <prerequisities>
+    <prerequisites>
         <course>ML1</course>
-    </prerequisities>
+    </prerequisites>
     <keyword>ML</keyword>
 </course>
 

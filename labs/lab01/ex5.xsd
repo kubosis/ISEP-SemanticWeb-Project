@@ -2,10 +2,17 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="universityCourses" type="universityCourseType"/>
     <xs:element name="course" type="courseType"/>
+    <xs:element name="prerequisites" type="prereqType"/>
 
     <xs:complexType name="universityCourseType">
         <xs:sequence>
-            <xs:element name="course" type="courseType"/>
+            <xs:element name="course" type="courseType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="prereqType">
+        <xs:sequence>
+            <xs:element name="course" type="xs:string" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -14,6 +21,8 @@
             <xs:element name="title" type="xs:string"/>
             <xs:element name="description" type="xs:string"/>
             <xs:element name="professor" type="xs:string"/>
+            <xs:element name="keyword" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="prerequisites" type="prereqType" minOccurs="0"/>
         </xs:sequence>
         <xs:attribute name="code" type="xs:string"/>
         <xs:attribute name="credits" type="xs:integer"/>
