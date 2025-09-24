@@ -21,10 +21,10 @@
     <title>Machine learning 2</title>
     <description>This course covers advanced topics of ml.</description>
     <professor>Dr. Max Muller</professor>
+    <keyword>ML</keyword>
     <prerequisites>
         <course>ML1</course>
     </prerequisites>
-    <keyword>ML</keyword>
 </course>
 
 </universityCourses>
