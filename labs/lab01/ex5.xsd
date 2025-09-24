@@ -10,6 +10,16 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:key name="courseKey">
+        <xs:selector xpath="course"/>
+        <xs:field xpath="@code"/>
+    </xs:key>
+
+    <xs:keyref name="prereqKeyRef" refer="courseKey">
+        <xs:selector xpath="course/prerequisites/course"/>
+        <xs:field xpath="."/>
+    </xs:keyref>
+    
     <xs:complexType name="prereqType">
         <xs:sequence>
             <xs:element name="course" type="xs:string" maxOccurs="unbounded"/>
