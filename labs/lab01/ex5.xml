@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universityCourses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ex5.xsd">
+
+<course code="ABC" credits="3">
+    <title>Semantic Web and Knowledge Management</title>
+    <description>This course covers RDF, OWL, SPARQL, and knowledge graph construction.</description>
+    <professor>Dr. Emily Chen</professor>
+    <keyword>RDF</keyword>
+    <keyword>OWL</keyword>
+    <keyword>SPARQL</keyword>
+</course>
+
+<course code="ML1" credits="4">
+    <title>Machine learning 1</title>
+    <description>This course covers basics of ml.</description>
+    <professor>Dr. Max Muller</professor>
+    <keyword>ML</keyword>
+</course>
+
+<course code="ML2" credits="4">
+    <title>Machine learning 2</title>
+    <description>This course covers advanced topics of ml.</description>
+    <professor>Dr. Max Muller</professor>
+    <prerequisities>
+        <course>ML1</course>
+    </prerequisities>
+    <keyword>ML</keyword>
+</course>
+
+</universityCourses>

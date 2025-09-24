@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universityCourses>
+
+
+<course code="ABC" credits="3">
+    <title>Semantic Web and Knowledge Management</title>
+    <description>This course covers RDF, OWL, SPARQL, and knowledge graph construction.</description>
+    <professor>Dr. Emily Chen</professor>
+</course>
+
+    <course code="ML1" credits="4">
+    <title>Machine learning 1</title>
+    <description>This course covers basics of ml.</description>
+    <professor>Dr. Max Muller</professor>
+</course>
+
+    <course code="ML2" credits="4">
+    <title>Machine learning 2</title>
+    <description>This course covers advanced topics of ml.</description>
+    <professor>Dr. Max Muller</professor>
+</course>
+
+</universityCourses>
