@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="universityCourses" type="universityCourseType"/>
+    <xs:element name="universityCourses" type="universityCourseType">
+        <xs:key name="courseKey">
+        <xs:selector xpath="course"/>
+        <xs:field xpath="@code"/>
+    </xs:key>
+
+    <xs:keyref name="prereqKeyRef" refer="courseKey">
+        <xs:selector xpath="course/prerequisites/course"/>
+        <xs:field xpath="."/>
+    </xs:keyref>
+    </xs:element>
     <xs:element name="course" type="courseType"/>
     <xs:element name="prerequisites" type="prereqType"/>
 
@@ -10,16 +20,8 @@
         </xs:sequence>
     </xs:complexType>
 
-    <xs:key name="courseKey">
-        <xs:selector xpath="course"/>
-        <xs:field xpath="@code"/>
-    </xs:key>
 
-    <xs:keyref name="prereqKeyRef" refer="courseKey">
-        <xs:selector xpath="course/prerequisites/course"/>
-        <xs:field xpath="."/>
-    </xs:keyref>
-    
+
     <xs:complexType name="prereqType">
         <xs:sequence>
             <xs:element name="course" type="xs:string" maxOccurs="unbounded"/>
