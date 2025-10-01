@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix uni: <http://s2a.org/university/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+uni:AcademicProgram rdf:type rdf:Class
+
+uni:UndergraduateProgram rdf:type rdf:Class
+uni:UndergraduateProgram rdfs:subClassOf uni:AcademicProgram
+
+uni:GraduateProgram rdf:type rdfs:Class
+uni:GraduateProgram rdfs:subClassOf uni:AcademicProgram
+
+
+uni:BachelorOfScience rdf:type rdf:Class
+uni:BachelorOfScience rdfs:subClassOf uni:UndergraduateProgram
+
+uni:MasterOfScience rdf:type rdf:Class
+uni:MasterOfScience rdfs:subClassOf uni:GraduateProgram
+
+uni:PhD rdf:type rdf:Class
+uni:PhD rdfs:subClassOf uni:GraduateProgram
+
+

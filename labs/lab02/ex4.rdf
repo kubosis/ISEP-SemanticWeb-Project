@@ -1,0 +1,20 @@
+@prefix s2a: <http://s2a.org/ontology/> .
+@prefix uni: <http://s2a.org/university/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# Instance Data with Errors
+uni:Math201 rdf:type s2a:Course .                 # 1st error - a instead of rdf:type
+uni:DrJones s2a:teaches uni:Math201 .             # 2nd error - order
+uni:Math201 s2a:hasTitle "Linear Algebra" .       # 3rd error - ; instead of .
+uni:Math201 s2a:hasCreditValue 3 .                # 4th error - missing subject
+uni:Charlie rdf:type uni:Student  .               # 5th error - order, missing rdf:type
+uni:Charlie s2a:isEnrolledIn uni:Math201 .        # correct
+
+# part 2
+uni:CS410 rdf:type s2a:Course .
+uni:CS410 s2a:hasTitle "Machine Learning" .
+uni:CS410 s2a:hasCreditValue 4 .
+uni:DrEvans s2a:teaches uni:CS410 .
+uni:David rdf:type uni:Student  .
+uni:David s2a:isEnrolledIn uni:CS410 .
+
+

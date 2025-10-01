@@ -1,0 +1,17 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix uni: <http://s2a.org/university/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix s2a: <http://s2a.org/ontology/> .
+
+uni:Course rdf:type rdf:Class
+    rdfs:label "University course" .
+
+
+uni:hasPrerequisite rdf:type rdf:Property .
+uni:hasPrerequisite rdfs:domain uni:Course .
+uni:hasPrerequisite rdfs:range uni:Course .
+
+
+uni:CS101 rdf:type uni:Course .
+uni:CS205 rdf:type uni:Course .
+uni:CS205 uni:hasPrerequisite uni:CS201 .

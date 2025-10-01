@@ -1,0 +1,64 @@
+• uni:CS101 rdf:type s2a:Course .
+CS101 is a Course
+
+• uni:DrSmith rdf:type s2a:Professor .
+DrSmith is a professor
+
+
+• uni:DrSmith s2a:teaches uni:CS101 .
+DrSmith teaches CS101
+
+
+• uni:CS101 s2a:hasCreditValue "3" .
+CS101 has 3 credits
+
+
+• uni:Alice s2a:hasPassedCourse uni:CS101 .
+Alice has passed CS101
+
+
+• uni:Alice rdf:type s2a:Student .
+Alice is a student
+
+• uni:Bob rdf:type s2a:Student .
+Bob is a student
+
+
+• uni:Alice s2a:hasPassedCourse uni:CS101.
+Alice has passed CS101
+
+
+• uni:Bob s2a:isEnrolledIn uni:CS101 .
+Bob is enrolled in CS101
+
+• uni:CS205 rdf:type s2a:Course .
+CS205 is a Course
+
+• uni:CS205 s2a:hasTitle "Advanced Algorithms" .
+CS205 has a title Advanced Algorithms.
+
+• uni:CS205 s2a:hasCreditValue "4" .
+CS205 has 4 credits
+
+• uni:Alice rdf:type s2a:Student .
+Alice is a student
+
+• uni:Bob rdf:type s2a:Student .
+Bob is a Student
+
+• uni:Alice s2a:hasPassedCourse uni:CS101.
+Alice has passed CS101
+
+
+• uni:Bob s2a:isEnrolledIn uni:CS101 .
+Bob is enrolled in CS101
+
+• uni:CS205 rdf:type s2a:Course .
+CS 205 is a course
+
+• uni:CS205 s2a:hasTitle "Advanced Algorithms" .
+CS205 has a title Advanced Algorithms.
+
+
+• uni:CS205 s2a:hasCreditValue "4" .
+CS205 has 4 credits

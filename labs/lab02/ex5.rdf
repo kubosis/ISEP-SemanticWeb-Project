@@ -1,0 +1,17 @@
+@prefix s2a: <http://s2a.org/ontology/> .
+@prefix uni: <http://s2a.org/university/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+s2a:ProgramRequirement rdf:type rdf:Class
+
+s2a:isRequirementFor rdf:type rdf:Property .
+s2a:isRequirementFor rdfs:domain s2a:Course .
+s2a:isRequirementFor rdfs:range s2a:AcademicProgram .
+
+s2a:isPartOfProgram rdf:type rdf:Property .
+s2a:isPartOfProgram rdfs:domain s2a:Student .
+s2a:isPartOfProgram rdfs:range s2a:AcademicProgram .
+
+# How this schema enables "smart" advising
+# We can query which courses are needed to complete distinct academical programs
+#
