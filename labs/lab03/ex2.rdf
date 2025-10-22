@@ -1,0 +1,49 @@
+// 1. we created ER diagram for the first part of this exercise - see er_diagram_ex2.svg
+
+@prefix s2a: <http://example.org/s2a#> .
+@prefix uni: <http://example.org/university#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+uni:Course rdf:type rdf:Class .
+uni:Teacher rdf:type rdf:Class .
+
+uni:hasPrerequisite rdf:type rdf:Property .
+uni:hasPrerequisite rdfs:domain uni:Course .
+uni:hasPrerequisite rdfs:range uni:Course .
+
+uni:isTaughtBy rdf:type rdf:Property .
+uni:isTaughtBy rdfs:domain uni:Course .
+uni:isTaughtBy rdfs:range uni:Teacher .
+
+uni:hasTitle rdf:type rdf:Property .
+uni:hasTitle rdfs:domain uni:Course .
+uni:hasTitle rdfs:range rdf:Integer .
+
+uni:hasCredits rdf:type rdf:Property .
+uni:hasCredits rdfs:domain uni:Course .
+uni:hasCredits rdfs:range rdf:String .
+
+
+uni:MTH301 a uni:Course .
+uni:MTH302 a uni:Course .
+uni:ART110 a uni:Course .
+
+uni:MTH301 uni:hasCredits 4 .
+uni:MTH302 uni:hasCredits 4 .
+uni:ART110 uni:hasCredits 3 .
+
+uni:MTH301 uni:hasTitle "Calculus I"  .
+uni:MTH302 uni:hasTitle "Calculus II" .
+uni:ART110 uni:hasTitle "Fundamentals of Drawing" .
+
+uni:MTH302 uni:hasPrerequisite uni:MTH301 .
+
+uni:DrEuler a uni:Teacher .
+uni:DrNewton a uni:Teacher .
+uni:ProfKahlo uni:Teacher .
+
+uni:MTH301 uni:isTaughtBy uni:DrEuler .
+uni:MTH302 uni:isTaughtBy uni:DrNewton .
+uni:ART110 uni:isTaughtBy uni:ProfKahlo .
