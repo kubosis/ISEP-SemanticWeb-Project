@@ -1,0 +1,270 @@
+@prefix ex: <http://example.org/uni#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+### CLASS DEFINITIONS – a stands for rdf:type in Turtle
+ex:Course a rdfs:Class .
+ex:Skill a rdfs:Class .
+ex:ResearchPaper a rdfs:Class .
+ex:CareerPath a rdfs:Class .
+ex:Professor a rdfs:Class .
+
+
+### PROPERTY DEFINITIONS
+### COURSE CLASS
+
+ex:courseTitle a rdf:Property ;
+	rdfs:domain ex:Course ;
+	rdfs:range xsd:string .
+
+ex:creditPoints a rdf:Property ;
+	rdfs:domain ex:Course ;
+	rdfs:range xsd:integer .
+
+ex:teachesSkill a rdf:Property ;
+	rdfs:domain ex:Course ;
+	rdfs:range ex:Skill .
+
+ex:prerequisite a rdf:Property ;
+	rdfs:domain ex:Course ;
+	rdfs:range ex:Course .
+
+ex:taughtBy a rdf:Property ;
+	rdfs:domain ex:Course ;
+	rdfs:range ex:Professor .
+
+ex:isCoreCourse a rdf:Property ;
+    rdfs:domain ex:Course ;
+    rdfs:range xsd:boolean .
+
+### SKILL CLASS
+ex:label a rdf:Property ;
+	rdfs:domain ex:Course ;
+	rdfs:range xsd:string .
+
+### ResearchPaper CLASS
+ex:paperTitle a rdf:Property ;
+	rdfs:domain ex:ResearchPaper ;
+	rdfs:range xsd:string .
+
+ex:paperTitle a rdf:Property ;
+	rdfs:domain ex:ResearchPaper ;
+	rdfs:range xsd:string .
+
+ex:paperTitle a rdf:Property ;
+	rdfs:domain ex:ResearchPaper ;
+	rdfs:range xsd:integer .
+
+ex:authoredBy a rdf:Property ;
+	rdfs:domain ex:ResearchPaper ;
+	rdfs:range ex:Professor .
+
+ex:researchDomain a rdf:Property ;
+	rdfs:domain ex:ResearchPaper ;
+	rdfs:range ex:Course .
+
+### CareerPath CLASS
+ex:careerTitle a rdf:Property ;
+	rdfs:domain ex:CareerPath ;
+	rdfs:range xsd:string .
+
+ex:requiresSkill a rdf:Property ;
+	rdfs:domain ex:CareerPath ;
+	rdfs:range ex:Skill .
+
+### Professor CLASS
+
+ex:name a rdf:Property ;
+	rdfs:domain ex:Professor ;
+	rdfs:range xsd:string .
+
+### Courses
+ex:MLIntro a ex:Course ;
+ ex:courseTitle "Introduction to Machine Learning" ;
+ ex:isTaughtBy ex:ProfMuller ;
+ ex:teachesSkill ex:Python, ex:Statistics ;
+ ex:isCoreCourse true .
+
+ex:DLAdvanced a ex:Course ;
+ ex:courseTitle "Advanced Machine Learning" ;
+ ex:isTaughtBy ex:ProfMuller ;
+ ex:teachesSkill ex:Python, ex:NeuralNetworks ;
+ ex:hasPrerequisite ex:MLIntro ;
+ ex:isCoreCourse false .
+
+ex:DataScienceBasics a ex:Course ;
+ex:courseTitle "Data Science Basics" ; 
+ex:isTaughtBy ex:ProfSmith ;
+ex:teachesSkill ex:Python, ex:DataVisualization ;
+ex:isCoreCourse true .
+
+
+ 
+ex:DataViz a ex:Course ;
+    ex:courseTitle "Data Visualization" ;
+    ex:isTaughtBy ex:ProfGarcia ;
+    ex:teachesSkill ex:DataViz, ex:Python ;
+    ex:isCoreCourse false.
+ 
+ex:Algorithms a ex:Course ;
+    ex:courseTitle "Algorithms and Data Structures" ;
+    ex:isTaughtBy ex:ProfSmith ;
+    ex:teachesSkill ex:AlgorithmsThinking, ex:LinearAlgebra ;
+    ex:isCoreCourse true .
+ 
+ex:LinearAlgebraCourse a ex:Course ;
+    ex:courseTitle "Linear Algebra for CS" ;
+    ex:isTaughtBy ex:ProfRossi ;
+    ex:teachesSkill ex:LinearAlgebra ;
+    ex:isCoreCourse true .
+ 
+ex:ProbStats a ex:Course ;
+    ex:courseTitle "Probability and Statistics" ;
+    ex:isTaughtBy ex:ProfKhan ;
+    ex:teachesSkill ex:Statistics ;
+    ex:isCoreCourse true.
+ 
+ex:NLPIntro a ex:Course ;
+    ex:courseTitle "Introduction to Natural Language Processing" ;
+    ex:isTaughtBy ex:ProfZhang ;
+    ex:teachesSkill ex:NLP, ex:Python ;
+    ex:hasPrerequisite ex:MLIntro ;
+    ex:isCoreCourse false.
+ 
+ex:ComputerVision a ex:Course ;
+    ex:courseTitle "Computer Vision" ;
+    ex:isTaughtBy ex:ProfZhang, ex:ProfGarcia ;
+    ex:teachesSkill ex:NeuralNetworks, ex:AlgorithmsThinking ;
+    ex:hasPrerequisite ex:DLAdvanced ;
+    ex:isCoreCourse false .
+ 
+ex:BigData a ex:Course ;
+    ex:courseTitle "Big Data Systems" ;
+    ex:isTaughtBy ex:ProfSmith ;
+    ex:teachesSkill ex:BigDataTools, ex:AlgorithmsThinking ;
+    ex:isCoreCourse false .
+ 
+ex:SoftwareEng a ex:Course ;
+    ex:courseTitle "Software Engineering" ;
+    ex:isTaughtBy ex:ProfRossi ;
+    ex:teachesSkill ex:Python, ex:AlgorithmsThinking ;
+    ex:isCoreCourse true .
+
+### ResearchPaper
+ex:Paper1 a ex:ResearchPaper ;
+    ex:paperTitle "Attention Is All You Need" ;
+    ex:paperAbstract "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely." ;
+    ex:publishedInYear 2017 ;
+    ex:authoredBy ex:ProfMuller ;
+    ex:researchDomain "Natural Language Processing" .
+ 
+ex:Paper2 a ex:ResearchPaper ;
+    ex:paperTitle "Deep Residual Learning for Image Recognition" ;
+    ex:paperAbstract "Deeper neural networks are more difficult to train; we present a residual learning framework to ease training of deeper networks." ;
+    ex:publishedInYear 2015 ;
+    ex:authoredBy ex:ProfZhang ;
+    ex:researchDomain "Computer Vision" .
+ 
+ex:Paper3 a ex:ResearchPaper ;
+    ex:paperTitle "Scalable Machine Learning on Big Data" ;
+    ex:paperAbstract "Techniques and systems for scaling ML across clusters and distributed data stores." ;
+    ex:publishedInYear 2019 ;
+    ex:authoredBy ex:ProfSmith, ex:ProfKhan ;
+    ex:researchDomain "Machine Learning" .
+ 
+ex:Paper4 a ex:ResearchPaper ;
+    ex:paperTitle "Neural Architectures for Sequence Modeling" ;
+    ex:paperAbstract "We analyze architectures for sequence modeling including RNNs and attentional models." ;
+    ex:publishedInYear 2018;
+    ex:authoredBy ex:ProfMuller, ex:ProfZhang ;
+    ex:researchDomain "Natural Language Processing" .
+ 
+ex:Paper5 a ex:ResearchPaper ;
+    ex:paperTitle "Graph-based Algorithms for Data Mining" ;
+    ex:paperAbstract "Graph algorithms for clustering and analysis in large networks." ;
+    ex:publishedInYear 2016 ;
+    ex:authoredBy ex:ProfRossi ;
+    ex:researchDomain "Data Mining" .
+
+### SKILLS 
+
+ex:Python a ex:Skill ; 
+rdfs:label "Python Programming" .
+
+ex:Statistics a ex:Skill ; 
+rdfs:label "Statistical Analysis" .
+
+ex:NeuralNetworks a ex:Skill ; 
+rdfs:label "Neural Networks" .
+
+ex:LinearAlgebra a ex:Skill ; 
+rdfs:label "Linear Algebra" .
+
+ex:DataViz a ex:Skill ;
+rdfs:label "Data Visualization" .
+
+ex:BigDataTools a ex:Skill ;
+rdfs:label "Big Data Tools (Spark, Hadoop)" .
+
+ex:AlgorithmsThinking a ex:Skill ; 
+rdfs:label "Algorithms and Problem Solving" .
+
+ex:NLP a ex:Skill ;
+rdfs:label "Natural Language Processing" .
+ 
+### PROFESSORS 
+
+ex:ProfMuller a ex:Professor ;
+ex:name "Dr. Anna Müller" .
+
+ex:ProfZhang a ex:Professor ;
+ex:name "Dr. Wei Zhang" .
+
+ex:ProfGarcia a ex:Professor ;
+ex:name "Dr. María García" .
+
+ex:ProfSmith a ex:Professor ;
+ex:name "Dr. John Smith" .
+
+ex:ProfKhan a ex:Professor ;
+ex:name "Dr. Aisha Khan" .
+
+ex:ProfRossi a ex:Professor ;
+ex:name "Dr. Luca Rossi" .
+
+### CAREER PATHS 
+
+ex:DataScientist a ex:CareerPath ;
+
+    ex:careerTitle "Data Scientist" ;
+
+    ex:requiresSkill ex:Python, ex:Statistics, ex:DataViz .
+ 
+ex:MLEngineer a ex:CareerPath ;
+
+    ex:careerTitle "Machine Learning Engineer" ;
+
+    ex:requiresSkill ex:Python, ex:NeuralNetworks, ex:LinearAlgebra .
+ 
+ex:CVEngineer a ex:CareerPath ;
+
+    ex:careerTitle "Computer Vision Engineer" ;
+
+    ex:requiresSkill ex:NeuralNetworks, ex:AlgorithmsThinking, ex:BigDataTools .
+ 
+ex:ResearchScientist a ex:CareerPath ;
+
+    ex:careerTitle "Research Scientist" ;
+
+    ex:requiresSkill ex:NLP, ex:NeuralNetworks, ex:Statistics .
+ 
+ex:DataEngineer a ex:CareerPath ;
+
+    ex:careerTitle "Data Engineer" ;
+
+    ex:requiresSkill ex:BigDataTools, ex:Python .
+
+ 
+
