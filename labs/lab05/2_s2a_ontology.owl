@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/kubas/ontologies/2025/10/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/kubas/ontologies/2025/10/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/kubas/ontologies/2025/10/untitled-ontology-3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AcademicProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoreRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DegreeRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectiveRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semester"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#completedCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#offeredInSemester"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesCourse"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCourseCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCourseName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCreditHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProgramName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSemesterName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStudentID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BSc_ComputerScience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Core_CS101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fall2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MATH101"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CoreRequirement"/>
+        <Class IRI="#DegreeRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectiveRequirement"/>
+        <Class IRI="#DegreeRequirement"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicProgram"/>
+        <NamedIndividual IRI="#BSc_ComputerScience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#CS101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#CS102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoreRequirement"/>
+        <NamedIndividual IRI="#Core_CS101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Semester"/>
+        <NamedIndividual IRI="#Fall2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#MATH101"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#completedCourse"/>
+        <NamedIndividual IRI="#Alice"/>
+        <NamedIndividual IRI="#CS101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#takesCourse"/>
+        <NamedIndividual IRI="#Alice"/>
+        <NamedIndividual IRI="#MATH101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRequirement"/>
+        <NamedIndividual IRI="#BSc_ComputerScience"/>
+        <NamedIndividual IRI="#Core_CS101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOfProgram"/>
+        <NamedIndividual IRI="#CS101"/>
+        <NamedIndividual IRI="#BSc_ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offeredInSemester"/>
+        <NamedIndividual IRI="#CS101"/>
+        <NamedIndividual IRI="#Fall2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <NamedIndividual IRI="#CS102"/>
+        <NamedIndividual IRI="#CS101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOfProgram"/>
+        <NamedIndividual IRI="#Core_CS101"/>
+        <NamedIndividual IRI="#BSc_ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStudentID"/>
+        <NamedIndividual IRI="#Alice"/>
+        <Literal>S12345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCourseCode"/>
+        <NamedIndividual IRI="#CS101"/>
+        <Literal>CS101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCourseName"/>
+        <NamedIndividual IRI="#CS101"/>
+        <Literal>Introduction to Programming</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCreditHours"/>
+        <NamedIndividual IRI="#CS101"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#completedCourse"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRequirement"/>
+        <Class IRI="#AcademicProgram"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfProgram"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#offeredInSemester"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takesCourse"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#completedCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRequirement"/>
+        <Class IRI="#DegreeRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfProgram"/>
+        <Class IRI="#AcademicProgram"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#offeredInSemester"/>
+        <Class IRI="#Semester"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takesCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCourseCode"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCourseName"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCreditHours"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProgramName"/>
+        <Class IRI="#AcademicProgram"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSemesterName"/>
+        <Class IRI="#Semester"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStudentID"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCourseCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCourseName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCreditHours"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProgramName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSemesterName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStudentID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
