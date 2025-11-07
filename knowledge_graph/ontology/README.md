@@ -1,1 +1,1 @@
-## .ttl or .owl files defining the schema 
+riot --validate project_ontology.ttl
