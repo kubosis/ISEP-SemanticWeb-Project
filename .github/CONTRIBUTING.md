@@ -31,6 +31,7 @@ Welcome! We're excited that you're interested in contributing to our Study Path 
 ├── knowledge_graph/                             # The core Knowledge Graph files 
 │ ├── ontology/                                  # .ttl or .owl files defining the schema 
 │ ├── data/                                      # .rdf, .ttl, .jsonld instance data 
+│ ├── raw_data/                                  # folder to store raw data && partially cleaned data
 │ └── queries/                                   # .sparql files for reusable queries 
 ├── scripts/                                     # Data ingestion, ETL, and validation scripts 
 ├── .gitignore \
