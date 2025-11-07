@@ -22,18 +22,20 @@ Welcome! We're excited that you're interested in contributing to our Study Path 
 ---
 
 ## Project Structure
-/ \
-├── .github/ # CI/CD workflows, issue templates, and this guide \
-├── app/ # Web application for students \
-│ ├── frontend/ # Frontend code (e.g., React, Vue) \
-│ └── backend/ # API server & SPARQL query endpoint \
-├── knowledge_graph/ # The core Knowledge Graph files \
-│ ├── ontology/ # .ttl or .owl files defining the schema \
-│ ├── data/ # .rdf, .ttl, .jsonld instance data \
-│ └── queries/ # .sparql files for reusable queries \
-├── scripts/ # Data ingestion, ETL, and validation scripts \
+```
+/ 
+├── .github/                                     # CI/CD workflows, issue templates, and this guide 
+├── app/                                         # Basic Web application for students 
+│ ├── frontend/                                  # Frontend code (e.g., React, Vue) 
+│ └── backend/                                   # API server & SPARQL query endpoint written in python+fastapi
+├── knowledge_graph/                             # The core Knowledge Graph files 
+│ ├── ontology/                                  # .ttl or .owl files defining the schema 
+│ ├── data/                                      # .rdf, .ttl, .jsonld instance data 
+│ └── queries/                                   # .sparql files for reusable queries 
+├── scripts/                                     # Data ingestion, ETL, and validation scripts 
 ├── .gitignore \
 └── README.md\
+```
 
 ---
 
@@ -58,6 +60,8 @@ types:
   - build     #  Build system or dependencies
   - ci        #  CI/CD configuration changes
   - chore     #  Maintenance tasks (e.g., cleaning data)
+  - lab       # lab commits
+  - ontology  # commits to enhance the knowledge graph
 ```
 
 Example

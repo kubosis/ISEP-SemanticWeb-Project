@@ -17,3 +17,5 @@ types:
   - config    #  Configuration files changes
   - init      #  Initial commit or project setup
   - structure  #  Changes to project structure or architecture
+  - lab       # lab commits
+  - ontology  # commits to enhance the knowledge graph
