@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Courses - Smart Academic Advisor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .search-section {
+            margin-bottom: 2rem;
+        }
+        .keywords-input {
+            width: 100%;
+            padding: 12px;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .keywords-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 1rem 0;
+        }
+        .keyword-tag {
+            background: #6c757d;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .keyword-tag .remove {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .search-button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .search-button:hover {
+            background: #6c757d;
+        }
+        .search-button:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+        .results-list {
+            text-align: left;
+            margin: 1rem 0;
+        }
+        .result-item {
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+        }
+        .result-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .result-details {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .loading {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+        .back-button {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .back-button:hover {
+            background: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="window.location.href='mainMenu.html'">← Back to Main Menu</button>
+        <h1>Find Courses</h1>
+        <p>Enter keywords to find relevant courses to take</p>
+        
+        <div class="search-section">
+            <input 
+                type="text" 
+                class="keywords-input" 
+                id="keywordInput"
+                placeholder="Enter a keyword and press Enter (e.g., 'machine learning', 'python', 'data science')"
+                onkeypress="handleKeywordInput(event)"
+            >
+            <div class="keywords-tags" id="keywordsTags">
+                <!-- Keyword tags will appear here -->
+            </div>
+            <button class="search-button" id="searchButton" onclick="searchCourses()" disabled>Search Courses</button>
+        </div>
+        
+        <div class="results-list" id="courses-results">
+            <!-- Results will appear here -->
+        </div>
+    </div>
+
+    <script>
+        let keywords = [];
+
+        function handleKeywordInput(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                const input = document.getElementById('keywordInput');
+                const keyword = input.value.trim();
+                
+                if (keyword && !keywords.includes(keyword.toLowerCase())) {
+                    keywords.push(keyword.toLowerCase());
+                    updateKeywordsDisplay();
+                    input.value = '';
+                    
+                    // Enable search button if we have at least one keyword
+                    document.getElementById('searchButton').disabled = keywords.length === 0;
+                }
+            }
+        }
+
+        function removeKeyword(index) {
+            keywords.splice(index, 1);
+            updateKeywordsDisplay();
+            
+            // Disable search button if no keywords left
+            document.getElementById('searchButton').disabled = keywords.length === 0;
+        }
+
+        function updateKeywordsDisplay() {
+            const tagsContainer = document.getElementById('keywordsTags');
+            tagsContainer.innerHTML = '';
+            
+            keywords.forEach((keyword, index) => {
+                const tag = document.createElement('div');
+                tag.className = 'keyword-tag';
+                tag.innerHTML = `
+                    ${keyword}
+                    <span class="remove" onclick="removeKeyword(${index})">×</span>
+                `;
+                tagsContainer.appendChild(tag);
+            });
+        }
+
+        async function searchCourses() {
+            if (keywords.length === 0) return;
+            
+            const resultsContainer = document.getElementById('courses-results');
+            resultsContainer.innerHTML = '<div class="loading">Searching for courses...</div>';
+            
+            try {
+                // This would be your actual backend API call
+                const response = await mockBackendSearch(keywords);
+                
+                displayResults(response.courses);
+            } catch (error) {
+                resultsContainer.innerHTML = '<div class="loading">Error searching for courses. Please try again.</div>';
+                console.error('Search error:', error);
+            }
+        }
+
+        function displayResults(courses) {
+            const resultsContainer = document.getElementById('courses-results');
+            
+            if (courses.length === 0) {
+                resultsContainer.innerHTML = '<div class="loading">No courses found for your keywords.</div>';
+                return;
+            }
+            
+            resultsContainer.innerHTML = '';
+            
+            courses.forEach(course => {
+                const item = document.createElement('div');
+                item.className = 'result-item';
+                item.innerHTML = `
+                    <div class="result-title">${course.name} (${course.code})</div>
+                    <div class="result-details">
+                        <strong>Department:</strong> ${course.department}<br>
+                        <strong>Skills:</strong> ${course.skills.join(', ')}<br>
+                        <strong>Description:</strong> ${course.description}<br>
+                        <strong>Prerequisites:</strong> ${course.prerequisites.join(', ') || 'None'}
+                    </div>
+                `;
+                resultsContainer.appendChild(item);
+            });
+        }
+
+        // Mock backend function - replace this with actual API call
+        async function mockBackendSearch(keywords) {
+            // Simulate API delay
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            // Mock course data
+            const mockCourses = [
+                {
+                    name: "Introduction to Machine Learning",
+                    code: "CS229",
+                    department: "Computer Science",
+                    skills: ["Python", "Statistics", "Linear Algebra", "ML Algorithms"],
+                    description: "Fundamental machine learning concepts and algorithms including supervised and unsupervised learning.",
+                    prerequisites: ["CS106B", "MATH51"],
+                    credits: 4
+                },
+                {
+                    name: "Database Systems",
+                    code: "CS145",
+                    department: "Computer Science",
+                    skills: ["SQL", "Database Design", "Normalization", "Transaction Management"],
+                    description: "Design and implementation of database systems, SQL, and data modeling.",
+                    prerequisites: ["CS107"],
+                    credits: 3
+                },
+                {
+                    name: "Web Development",
+                    code: "CS142",
+                    department: "Computer Science",
+                    skills: ["JavaScript", "HTML/CSS", "React", "Node.js"],
+                    description: "Modern web application development using current frameworks and technologies.",
+                    prerequisites: ["CS106B"],
+                    credits: 3
+                },
+                {
+                    name: "Data Structures and Algorithms",
+                    code: "CS161",
+                    department: "Computer Science",
+                    skills: ["Java", "Algorithms", "Complexity Analysis", "Data Structures"],
+                    description: "Fundamental data structures and algorithm analysis techniques.",
+                    prerequisites: ["CS106B", "MATH41"],
+                    credits: 4
+                },
+                {
+                    name: "Natural Language Processing",
+                    code: "CS224N",
+                    department: "Computer Science",
+                    skills: ["Python", "Deep Learning", "Linguistics", "Transformers"],
+                    description: "Processing and understanding human language using computational methods.",
+                    prerequisites: ["CS229", "CS124"],
+                    credits: 4
+                },
+                {
+                    name: "Data Science Fundamentals",
+                    code: "STATS202",
+                    department: "Statistics",
+                    skills: ["Python", "R", "Statistics", "Data Visualization"],
+                    description: "Introduction to data science concepts, tools, and methodologies.",
+                    prerequisites: ["STATS60", "CS106A"],
+                    credits: 3
+                }
+            ];
+            
+            
+            return { courses: mockCourses };
+        }
+
+        // Real backend API call (uncomment and modify when you have your backend ready)
+        /*
+        async function realBackendSearch(keywords) {
+            const response = await fetch('http://localhost:5000/api/search/courses', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ keywords: keywords })
+            });
+            
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            
+            return await response.json();
+        }
+        */
+    </script>
+</body>
+</html>
