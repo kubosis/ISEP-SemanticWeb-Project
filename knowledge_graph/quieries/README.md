@@ -1,1 +1,0 @@
-## .sparql files for reusable queries 

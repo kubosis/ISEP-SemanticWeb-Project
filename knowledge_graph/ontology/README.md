@@ -1,1 +1,0 @@
-## .ttl or .owl files defining the schema 
