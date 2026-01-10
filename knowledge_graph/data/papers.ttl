@@ -1,0 +1,1981 @@
+@prefix ex: <http://s2a.org/resource/> .
+@prefix s2a: <http://s2a.org/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:paper_031_Adaptive_vs_robust_control_Information_based_concepts a s2a:ResearchPaper ;
+    s2a:paperTitle "031 Adaptive vs robust control: Information based concepts"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0967-0661(93)90050-2> ;
+    s2a:paperVenue "Control Engineering Practice"^^xsd:string ;
+    s2a:paperYear 1993 ;
+    s2a:relatedToCourse ex:course_Masters_of_Engineering_Concepts_of_Engineering_Practice .
+
+ex:paper_10_Other_Methods_of_Water_Resource_Systems_Analysis_and_Synthesis a s2a:ResearchPaper ;
+    s2a:paperTitle "10 Other Methods of Water Resource Systems Analysis and Synthesis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/s0167-5648(08)70929-8> ;
+    s2a:paperVenue "Developments in Water Science"^^xsd:string ;
+    s2a:paperYear 1988 ;
+    s2a:relatedToCourse ex:course_Water_Resource_Systems .
+
+ex:paper_12_Water_Resource_Systems_Projects a s2a:ResearchPaper ;
+    s2a:paperTitle "12 Water Resource Systems Projects"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/s0167-5648(08)70931-6> ;
+    s2a:paperVenue "Developments in Water Science"^^xsd:string ;
+    s2a:paperYear 1988 ;
+    s2a:relatedToCourse ex:course_Water_Resource_Systems .
+
+ex:paper_13_ELECTROMECHANICAL_ACTIVE_VIBRATION a s2a:ResearchPaper ;
+    s2a:paperTitle "·13 ELECTROMECHANICAL ACTIVE VIBRATION"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781482269895-83> ;
+    s2a:paperVenue "System Dynamics"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Vibration_13013J .
+
+ex:paper_13_Prospects_of_Water_Resource_Systems_Analysis_and_Synthesis a s2a:ResearchPaper ;
+    s2a:paperTitle "13 Prospects of Water Resource Systems Analysis and Synthesis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/s0167-5648(08)70932-8> ;
+    s2a:paperVenue "Developments in Water Science"^^xsd:string ;
+    s2a:paperYear 1988 ;
+    s2a:relatedToCourse ex:course_Water_Resource_Systems .
+
+ex:paper_19_Interaction_of_Concentrated_Electron_Beams_with_a_Solid_Body a s2a:ResearchPaper ;
+    s2a:paperTitle "19. Interaction of Concentrated Electron Beams with a Solid Body"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1615/978-1-56700-310-9.280> ;
+    s2a:paperVenue "Physical Mechanics Laboratory Workshops"^^xsd:string ;
+    s2a:paperYear 2016 ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics_Laboratory .
+
+ex:paper_6_Simulation_Models_of_Water_Resource_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "6 Simulation Models of Water Resource Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/s0167-5648(08)70925-0> ;
+    s2a:paperVenue "Developments in Water Science"^^xsd:string ;
+    s2a:paperYear 1988 ;
+    s2a:relatedToCourse ex:course_Water_Resource_Systems .
+
+ex:paper_8_Data_envelopment_analysis a s2a:ResearchPaper ;
+    s2a:paperTitle "8 Data envelopment analysis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1515/9783111012681-008> ;
+    s2a:paperVenue "Environmental Data Analysis"^^xsd:string ;
+    s2a:paperYear 2023 ;
+    s2a:relatedToCourse ex:course_Computing_and_Data_Analysis_for_Environmental_Applications .
+
+ex:paper_AFDM_An_Advanced_FluidDynamics_Model a s2a:ResearchPaper ;
+    s2a:paperTitle "AFDM: An Advanced Fluid-Dynamics Model"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2172/6545907>,
+        <https://doi.org/10.2172/6641372> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 1990 ;
+    s2a:relatedToCourse ex:course_Advanced_Fluid_Dynamics_of_the_Environment .
+
+ex:paper_A_State_Cooperative_Automated_Transportation_Strategy_Linking_Policy_and_Deployment a s2a:ResearchPaper ;
+    s2a:paperTitle "A State Cooperative Automated Transportation Strategy: Linking Policy and Deployment"^^xsd:string ;
+    s2a:paperVenue "https://doi.org/10.26226/m.63283143f30377bc3baf7c40"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Transportation_Policy_Strategy_and_Management .
+
+ex:paper_Advanced_Dynamics_Modeling a s2a:ResearchPaper ;
+    s2a:paperTitle "Advanced Dynamics Modeling"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781003129165-4> ;
+    s2a:paperVenue "Advanced Dynamics Modeling Duality and Control of Robotic Systems"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Modeling_Dynamics_and_Control_I .
+
+ex:paper_Advanced_Fluid_Dynamics a s2a:ResearchPaper ;
+    s2a:paperTitle "Advanced Fluid Dynamics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.5772/1520> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Advanced_Fluid_Dynamics_of_the_Environment .
+
+ex:paper_Advanced_Geotechnical_Analyses a s2a:ResearchPaper ;
+    s2a:paperTitle "Advanced Geotechnical Analyses"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4324/9780203975008> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2006 ;
+    s2a:relatedToCourse ex:course_Advanced_Geotechnical_Engineering .
+
+ex:paper_Advanced_Materials_Design_and_Mechanics_II a s2a:ResearchPaper ;
+    s2a:paperTitle "Advanced Materials Design and Mechanics II"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4028/b-1iridr> ;
+    s2a:paperVenue "Applied Mechanics and Materials"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Mechanics_and_Materials_II .
+
+ex:paper_Advanced_Soil_Mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Advanced Soil Mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781351215183> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Advanced_Soil_Mechanics .
+
+ex:paper_Advanced_Wastewater_Treatment a s2a:ResearchPaper ;
+    s2a:paperTitle "Advanced Wastewater Treatment"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781003347941-35> ;
+    s2a:paperVenue "Water and Wastewater Engineering Technology"^^xsd:string ;
+    s2a:paperYear 2023 ;
+    s2a:relatedToCourse ex:course_Water_and_Wastewater_Treatment_Engineering .
+
+ex:paper_Aircraft_Crash_Dynamics_Some_Major_Considerations a s2a:ResearchPaper ;
+    s2a:paperTitle "Aircraft Crash Dynamics: Some Major Considerations"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1177/058310248101300303> ;
+    s2a:paperVenue "The Shock and Vibration Digest"^^xsd:string ;
+    s2a:paperYear 1981 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Vibration_13013J .
+
+ex:paper_Airline_Operations_and_Delay_Management_Insights_from_Airline_Economics_Networks_and_Strategic_Schedule_Planning_by_ChengLung_Wu a s2a:ResearchPaper ;
+    s2a:paperTitle "`Airline Operations and Delay Management Insights from Airline Economics Networks and Strategic Schedule Planning` by Cheng-Lung Wu"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.69554/szoo6424> ;
+    s2a:paperVenue "Journal of Airport Management"^^xsd:string ;
+    s2a:paperYear 2010 ;
+    s2a:relatedToCourse ex:course_Airline_Schedule_Planning .
+
+ex:paper_Airline_Schedule_Planning_Decisions a s2a:ResearchPaper ;
+    s2a:paperTitle "Airline Schedule Planning Decisions"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9781119275909.ch3> ;
+    s2a:paperVenue "Airline Network Planning and Scheduling"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Airline_Schedule_Planning .
+
+ex:paper_Antenna_Design_Based_on_Optimization_of_Linear_Motion_Trajectory a s2a:ResearchPaper ;
+    s2a:paperTitle "Antenna Design Based on Optimization of Linear Motion Trajectory"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-981-16-7965-0_9> ;
+    s2a:paperVenue "Antenna Optimization and Design Based on Binary Coding"^^xsd:string ;
+    s2a:paperYear 2022 ;
+    s2a:relatedToCourse ex:course_Motion_Based_Design .
+
+ex:paper_Applications_and_Systems_Integration a s2a:ResearchPaper ;
+    s2a:paperTitle "Applications and Systems Integration"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-031-61014-1_5> ;
+    s2a:paperVenue "Internet Computing"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Database_Internet_and_Systems_Integration_Technologies .
+
+ex:paper_Applications_of_Marine_Geographic_Information_Systems_GIS_in_Ocean_Surveying a s2a:ResearchPaper ;
+    s2a:paperTitle "Applications of Marine Geographic Information Systems (GIS) in Ocean Surveying"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.70767/jebe.v1i1.102> ;
+    s2a:paperVenue "Journal of Environmental and Building Engineering"^^xsd:string ;
+    s2a:paperYear 2024 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Applications_of_Geographic_Information_Systems .
+
+ex:paper_Approximation_Algorithms_for_Process_Systems_Engineering a s2a:ResearchPaper ;
+    s2a:paperTitle "Approximation Algorithms for Process Systems Engineering"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b978-0-444-64235-6.50101-7> ;
+    s2a:paperVenue "Computer Aided Chemical Engineering"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Computer_Algorithms_in_Systems_Engineering .
+
+ex:paper_Aquatic_Environmental_Chemistry a s2a:ResearchPaper ;
+    s2a:paperTitle "Aquatic Environmental Chemistry"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1093/hesc/9780198502838.001.0001> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Aquatic_Chemistry .
+
+ex:paper_Aqueous_cleaning_machines_How_they_work_and_whypart_III a s2a:ResearchPaper ;
+    s2a:paperTitle "Aqueous cleaning machines: How they work and why—part III"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/s0026-0576(09)80106-2> ;
+    s2a:paperVenue "Metal Finishing"^^xsd:string ;
+    s2a:paperYear 2009 ;
+    s2a:relatedToCourse ex:course_How_and_Why_Machines_Work .
+
+ex:paper_Asphalt_Mix_Design a s2a:ResearchPaper ;
+    s2a:paperTitle "Asphalt Mix Design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780429275111-7> ;
+    s2a:paperVenue "Civil Engineering Materials"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Civil_Engineering_Design .
+
+ex:paper_Assessment_of_surfacewater_quality_and_waterquality_control_alternatives_Johnson_Creek_Basin_Oregon a s2a:ResearchPaper ;
+    s2a:paperTitle "Assessment of surface-water quality and water-quality control alternatives Johnson Creek Basin Oregon"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3133/wri934090> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 1994 ;
+    s2a:relatedToCourse ex:course_Water_Quality_Control .
+
+ex:paper_Atomistic_constitutive_relations_for_multilattice_crystals a s2a:ResearchPaper ;
+    s2a:paperTitle "Atomistic constitutive relations for multilattice crystals"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/cbo9781139003582.013> ;
+    s2a:paperVenue "Modeling Materials"^^xsd:string ;
+    s2a:paperYear 2011 ;
+    s2a:relatedToCourse ex:course_From_Nano_to_Macro_Introduction_to_Atomistic_Modeling_Techniques .
+
+ex:paper_Atomisticcontinuum_coupling_finite_temperature_and_dynamics a s2a:ResearchPaper ;
+    s2a:paperTitle "Atomistic–continuum coupling: finite temperature and dynamics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/cbo9781139003582.015> ;
+    s2a:paperVenue "Modeling Materials"^^xsd:string ;
+    s2a:paperYear 2011 ;
+    s2a:relatedToCourse ex:course_From_Nano_to_Macro_Introduction_to_Atomistic_Modeling_Techniques .
+
+ex:paper_Atomisticcontinuum_coupling_static_methods a s2a:ResearchPaper ;
+    s2a:paperTitle "Atomistic–continuum coupling: static methods"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/cbo9781139003582.014> ;
+    s2a:paperVenue "Modeling Materials"^^xsd:string ;
+    s2a:paperYear 2011 ;
+    s2a:relatedToCourse ex:course_From_Nano_to_Macro_Introduction_to_Atomistic_Modeling_Techniques .
+
+ex:paper_Attack_Detection_Using_Unsupervised_Learning_Algorithms_in_CyberPhysical_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Attack Detection Using Unsupervised Learning Algorithms in Cyber-Physical Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b978-0-323-88506-5.50194-7> ;
+    s2a:paperVenue "Computer Aided Chemical Engineering"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Computer_Algorithms_in_Systems_Engineering .
+
+ex:paper_Background_and_motivation_for_the_introduction_of_network_models a s2a:ResearchPaper ;
+    s2a:paperTitle "Background and motivation for the introduction of network models"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/cbo9781139235952.003> ;
+    s2a:paperVenue "Introduction to the Network Approximation Method for Materials Modeling"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Network_Models .
+
+ex:paper_BarrierFree_Plan_for_Sustainable_Use_of_Osakas_Municipal_Subway_System a s2a:ResearchPaper ;
+    s2a:paperTitle "Barrier-Free Plan for Sustainable Use of Osaka's Municipal Subway System"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/40717(148)22> ;
+    s2a:paperVenue "Urban Public Transportation System"^^xsd:string ;
+    s2a:paperYear 2004 ;
+    s2a:relatedToCourse ex:course_A_Sustainable_Transportation_Plan_for_MIT .
+
+ex:paper_Basic_Principles_of_MultiCarrier_Communication_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Basic Principles of Multi-Carrier Communication Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b19273-8> ;
+    s2a:paperVenue "Multi-Carrier Communication Systems with Examples in MATLAB"^^xsd:string ;
+    s2a:paperYear 2016 ;
+    s2a:relatedToCourse ex:course_Carrier_Systems .
+
+ex:paper_Beginnings_of_Multimodal_Urban_Transportation_Planning a s2a:ResearchPaper ;
+    s2a:paperTitle "Beginnings of Multimodal Urban Transportation Planning"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-319-39975-1_8> ;
+    s2a:paperVenue "Urban Transportation Planning in the United States"^^xsd:string ;
+    s2a:paperYear 2016 ;
+    s2a:relatedToCourse ex:course_Urban_Transportation_Planning .
+
+ex:paper_Beginnings_of_Urban_Transportation_Planning a s2a:ResearchPaper ;
+    s2a:paperTitle "Beginnings of Urban Transportation Planning"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.5040/9798216031154.0007> ;
+    s2a:paperVenue "Urban Transportation Planning in the United States"^^xsd:string ;
+    s2a:paperYear 1999 ;
+    s2a:relatedToCourse ex:course_Urban_Transportation_Planning .
+
+ex:paper_Big_Data_Analysis_and_Machine_Learning_for_Green_Computing a s2a:ResearchPaper ;
+    s2a:paperTitle "Big Data Analysis and Machine Learning for Green Computing"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781003032328-7> ;
+    s2a:paperVenue "Big Data Analysis for Green Computing"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Computing_and_Data_Analysis_for_Environmental_Applications .
+
+ex:paper_Big_Data_Analysis_in_Cloud_Using_Machine_Learning a s2a:ResearchPaper ;
+    s2a:paperTitle "Big Data Analysis in Cloud Using Machine Learning"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3233/978-1-61499-814-3-107> ;
+    s2a:paperVenue "Advances in Parallel Computing"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Computing_and_Data_Analysis_for_Environmental_Applications .
+
+ex:paper_Biological_Processes_for_Water_and_Wastewater_Treatment a s2a:ResearchPaper ;
+    s2a:paperTitle "Biological Processes for Water and Wastewater Treatment"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/9781108115896.009> ;
+    s2a:paperVenue "Water and Wastewater Engineering"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Water_and_Wastewater_Treatment_Engineering .
+
+ex:paper_Butterworths_Advanced_Series_in_Geotechnical_Engineering a s2a:ResearchPaper ;
+    s2a:paperTitle "Butterworths Advanced Series in Geotechnical Engineering"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b978-0-408-03549-1.50001-7> ;
+    s2a:paperVenue "Earth Reinforcement and Soil Structures"^^xsd:string ;
+    s2a:paperYear 1985 ;
+    s2a:relatedToCourse ex:course_Advanced_Geotechnical_Engineering .
+
+ex:paper_COMPUTING_FOUNDATIONS_OF_SOFTWARE_ENGINEERING a s2a:ResearchPaper ;
+    s2a:paperTitle "COMPUTING FOUNDATIONS OF SOFTWARE ENGINEERING"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780203496091-14> ;
+    s2a:paperVenue "Software Engineering Foundations"^^xsd:string ;
+    s2a:paperYear 2007 ;
+    s2a:relatedToCourse ex:course_Foundations_of_Software_Engineering .
+
+ex:paper_Can_a_strategy_of_integrated_airbus_services_create_a_value_proposition_for_regional_aviation_management a s2a:ResearchPaper ;
+    s2a:paperTitle "Can a strategy of integrated air-bus services create a value proposition for regional aviation management?"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.tra.2019.12.013> ;
+    s2a:paperVenue "Transportation Research Part A: Policy and Practice"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Transportation_Policy_Strategy_and_Management .
+
+ex:paper_Canopy_Transport_Processes a s2a:ResearchPaper ;
+    s2a:paperTitle "Canopy Transport Processes"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-642-73845-6_7> ;
+    s2a:paperVenue "Flow and Transport in the Natural Environment: Advances and Applications"^^xsd:string ;
+    s2a:paperYear 1988 ;
+    s2a:relatedToCourse ex:course_Transport_Processes_in_the_Environment .
+
+ex:paper_Canopy_Transport_Processes_Commentary a s2a:ResearchPaper ;
+    s2a:paperTitle "Canopy Transport Processes: Commentary"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-642-73845-6_8> ;
+    s2a:paperVenue "Flow and Transport in the Natural Environment: Advances and Applications"^^xsd:string ;
+    s2a:paperYear 1988 ;
+    s2a:relatedToCourse ex:course_Transport_Processes_in_the_Environment .
+
+ex:paper_Chemicals_in_the_Environment_Diffusive_Transport a s2a:ResearchPaper ;
+    s2a:paperTitle "Chemicals in the Environment Diffusive Transport"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-4614-5731-2_2> ;
+    s2a:paperVenue "Transport and Fate of Chemicals in the Environment"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Chemicals_in_the_Environment_Fate_and_Transport .
+
+ex:paper_Chemicals_in_the_Environment_Turbulent_Transport a s2a:ResearchPaper ;
+    s2a:paperTitle "Chemicals in the Environment Turbulent Transport"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-4614-5731-2_5> ;
+    s2a:paperVenue "Transport and Fate of Chemicals in the Environment"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Chemicals_in_the_Environment_Fate_and_Transport .
+
+ex:paper_Chongqing_Intelligent_Transport_System_Plan a s2a:ResearchPaper ;
+    s2a:paperTitle "Chongqing Intelligent Transport System Plan"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/9780784412299.0033> ;
+    s2a:paperVenue "Sustainable Transportation Systems"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_A_Sustainable_Transportation_Plan_for_MIT .
+
+ex:paper_Civil_Engineering_Design a s2a:ResearchPaper ;
+    s2a:paperTitle "Civil Engineering Design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/(issn)2625-073x> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Introduction_to_Civil_Engineering_Design .
+
+ex:paper_Civil_Engineering_Materials a s2a:ResearchPaper ;
+    s2a:paperTitle "Civil Engineering Materials"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780429275111> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Civil_Engineering_Materials_Laboratory .
+
+ex:paper_Clipping_in_MultiCarrier_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Clipping in Multi-Carrier Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/0-387-22576-5_4> ;
+    s2a:paperVenue "Information Technology: Transmission Processing and Storage"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Carrier_Systems .
+
+ex:paper_Collaboration_and_Communication_in_the_Design_Chain_A_ValueBased_Approach a s2a:ResearchPaper ;
+    s2a:paperTitle "Collaboration and Communication in the Design Chain: A Value-Based Approach"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420047462-9> ;
+    s2a:paperVenue "Construction Supply Chain Management Handbook"^^xsd:string ;
+    s2a:paperYear 2008 ;
+    s2a:relatedToCourse ex:course_Strategic_Management_in_the_Design_and_Construction_Value_Chain .
+
+ex:paper_Color_plates a s2a:ResearchPaper ;
+    s2a:paperTitle "Color plates"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2307/j.ctt16f8c7f.14> ;
+    s2a:paperVenue "Earth Life and System"^^xsd:string ;
+    s2a:paperYear 2015 ;
+    s2a:relatedToCourse ex:course_Ecology_I_The_Earth_System .
+
+ex:paper_Commentary_on_Ecology_and_the_Earth_System a s2a:ResearchPaper ;
+    s2a:paperTitle "Commentary on Ecology and the Earth System"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-642-52354-0_6> ;
+    s2a:paperVenue "Earth System Analysis"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Ecology_I_The_Earth_System .
+
+ex:paper_Comparing_the_Accuracy_and_Sensitivity_of_MeshFree_and_Finite_Element_Methods_in_Vibration_Analysis a s2a:ResearchPaper ;
+    s2a:paperTitle "Comparing the Accuracy and Sensitivity of Mesh-Free and Finite Element Methods in Vibration Analysis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3390/dynamics5020013> ;
+    s2a:paperVenue "Dynamics"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Vibration_13013J .
+
+ex:paper_Computers_In_Engineering a s2a:ResearchPaper ;
+    s2a:paperTitle "Computers In Engineering"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b978-081551447-3.50016-9> ;
+    s2a:paperVenue "Engineering Problem Solving"^^xsd:string ;
+    s2a:paperYear 2001 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Computers_and_Engineering_Problem_Solving .
+
+ex:paper_Conclusion a s2a:ResearchPaper ;
+    s2a:paperTitle "Conclusion"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/0-387-23568-x_8> ;
+    s2a:paperVenue "Web Information Systems Engineering and Internet Technologies Book Series"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Database_Internet_and_Systems_Integration_Technologies .
+
+ex:paper_Concrete_Mix_Design a s2a:ResearchPaper ;
+    s2a:paperTitle "Concrete Mix Design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780429275111-4> ;
+    s2a:paperVenue "Civil Engineering Materials"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Civil_Engineering_Design .
+
+ex:paper_Connected_and_automated_vehicle_systems_Introduction_and_overview a s2a:ResearchPaper ;
+    s2a:paperTitle "Connected and automated vehicle systems: Introduction and overview"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1080/15472450.2017.1336053> ;
+    s2a:paperVenue "Journal of Intelligent Transportation Systems"^^xsd:string ;
+    s2a:paperYear 2017 ;
+    s2a:relatedToCourse ex:course_An_Introduction_to_Intelligent_Transportation_Systems .
+
+ex:paper_Consolidation a s2a:ResearchPaper ;
+    s2a:paperTitle "Consolidation"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b15955-9> ;
+    s2a:paperVenue "Advanced Soil Mechanics"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Advanced_Soil_Mechanics .
+
+ex:paper_Contaminant_plumes_containment_and_remediation_focus_area_Technology_summary a s2a:ResearchPaper ;
+    s2a:paperTitle "Contaminant plumes containment and remediation focus area. Technology summary"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2172/85587> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 1995 ;
+    s2a:relatedToCourse ex:course_Waste_Containment_and_Remediation_Technology .
+
+ex:paper_Contents a s2a:ResearchPaper ;
+    s2a:paperTitle "Contents"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1515/9781503625204-toc> ;
+    s2a:paperVenue "Vernacular Modernism"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_The_Impact_of_Globalization_on_the_Built_Environment .
+
+ex:paper_Curbside_parking_time_limits a s2a:ResearchPaper ;
+    s2a:paperTitle "Curbside parking time limits"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.tra.2013.07.009> ;
+    s2a:paperVenue "Transportation Research Part A: Policy and Practice"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Transportation_Policy_and_Environmental_Limits .
+
+ex:paper_DREAMS__concepts_of_a_istributed_time_anagement_ystem a s2a:ResearchPaper ;
+    s2a:paperTitle "DREAMS — concepts of a istributed -time anagement ystem"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0967-0661(96)00156-6> ;
+    s2a:paperVenue "Control Engineering Practice"^^xsd:string ;
+    s2a:paperYear 1996 ;
+    s2a:relatedToCourse ex:course_Masters_of_Engineering_Concepts_of_Engineering_Practice .
+
+ex:paper_Defining_Traffic_Flow_Phases_Using_Intelligent_Transportation_SystemsGenerated_Data a s2a:ResearchPaper ;
+    s2a:paperTitle "Defining Traffic Flow Phases Using Intelligent Transportation Systems-Generated Data"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1080/15472450601122322> ;
+    s2a:paperVenue "Journal of Intelligent Transportation Systems"^^xsd:string ;
+    s2a:paperYear 2007 ;
+    s2a:relatedToCourse ex:course_Transportation_Flow_Systems .
+
+ex:paper_Design_of_Settling_System_An_Introduction a s2a:ResearchPaper ;
+    s2a:paperTitle "Design of Settling System: An Introduction"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-81-322-3634-4_11> ;
+    s2a:paperVenue "Springer Transactions in Civil and Environmental Engineering"^^xsd:string ;
+    s2a:paperYear 2017 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Civil_and_Environmental_Engineering_Design_I .
+
+ex:paper_Determining_the_factors_affecting_transportation_demand_management_and_selecting_the_best_strategy_A_case_study a s2a:ResearchPaper ;
+    s2a:paperTitle "Determining the factors affecting transportation demand management and selecting the best strategy: A case study"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.tranpol.2023.11.003> ;
+    s2a:paperVenue "Transport Policy"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Transportation_Policy_Strategy_and_Management .
+
+ex:paper_Development_of_dry_barriers_for_containment_and_remediation_at_waste_sites a s2a:ResearchPaper ;
+    s2a:paperTitle "Development of dry barriers for containment and remediation at waste sites"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2172/10126152> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 1994 ;
+    s2a:relatedToCourse ex:course_Waste_Containment_and_Remediation_Technology .
+
+ex:paper_Distribution_automation_using_distribution_line_carrier_systems_Lower_layer_profiles a s2a:ResearchPaper ;
+    s2a:paperTitle "Distribution automation using distribution line carrier systems. Lower layer profiles"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3403/02551652> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Carrier_Systems .
+
+ex:paper_Dynamic_optimization_model_for_planning_of_integrated_logistical_system_functioning a s2a:ResearchPaper ;
+    s2a:paperTitle "Dynamic optimization model for planning of integrated logistical system functioning"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.31375/978-966-7716-92-9-48-58> ;
+    s2a:paperVenue "Dynamic optimization model for planning of integrated logistical system functioning"^^xsd:string ;
+    s2a:paperYear 2023 ;
+    s2a:relatedToCourse ex:course_Logistical_and_Transportation_Planning_Methods .
+
+ex:paper_Dynamics_Modeling_and_Control_of_Cascaded_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Dynamics Modeling and Control of Cascaded Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781003129165-8> ;
+    s2a:paperVenue "Advanced Dynamics Modeling Duality and Control of Robotic Systems"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Modeling_Dynamics_and_Control_I .
+
+ex:paper_Dynamics_of_a_versatile_sliding_control a s2a:ResearchPaper ;
+    s2a:paperTitle "Dynamics of a versatile sliding control"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/bf01968502> ;
+    s2a:paperVenue "Dynamics and Control"^^xsd:string ;
+    s2a:paperYear 1995 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Control_I .
+
+ex:paper_ECONOMICS_FOUNDATIONS_OF_SOFTWARE_ENGINEERING a s2a:ResearchPaper ;
+    s2a:paperTitle "ECONOMICS FOUNDATIONS OF SOFTWARE ENGINEERING"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780203496091-22> ;
+    s2a:paperVenue "Software Engineering Foundations"^^xsd:string ;
+    s2a:paperYear 2007 ;
+    s2a:relatedToCourse ex:course_Foundations_of_Software_Engineering .
+
+ex:paper_ENGINEERING_FOUNDATIONS_OF_SOFTWARE_ENGINEERING a s2a:ResearchPaper ;
+    s2a:paperTitle "ENGINEERING FOUNDATIONS OF SOFTWARE ENGINEERING"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780203496091-18> ;
+    s2a:paperVenue "Software Engineering Foundations"^^xsd:string ;
+    s2a:paperYear 2007 ;
+    s2a:relatedToCourse ex:course_Foundations_of_Software_Engineering .
+
+ex:paper_Ecology_and_the_Earth_System a s2a:ResearchPaper ;
+    s2a:paperTitle "Ecology and the Earth System"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-642-52354-0_5> ;
+    s2a:paperVenue "Earth System Analysis"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Ecology_I_The_Earth_System .
+
+ex:paper_Editorial_Board a s2a:ResearchPaper ;
+    s2a:paperTitle "Editorial Board"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/s0013-7944(18)30554-x>,
+        <https://doi.org/10.1016/s0167-6636(18)30474-5>,
+        <https://doi.org/10.1016/s0167-6636(19)30156-5>,
+        <https://doi.org/10.1016/s0167-6636(19)30209-1>,
+        <https://doi.org/10.1016/s0167-6636(19)30316-3>,
+        <https://doi.org/10.1016/s0266-8920(18)30177-2>,
+        <https://doi.org/10.1016/s0266-8920(19)30089-x> ;
+    s2a:paperVenue "Engineering Fracture Mechanics"^^xsd:string,
+        "Mechanics of Materials"^^xsd:string,
+        "Probabilistic Engineering Mechanics"^^xsd:string ;
+    s2a:paperYear 2018,
+        2019 ;
+    s2a:relatedToCourse ex:course_Engineering_Mechanics_II,
+        ex:course_Mechanics_and_Materials_II .
+
+ex:paper_Embedded_motion_controller_design_based_on_RTEX_network a s2a:ResearchPaper ;
+    s2a:paperTitle "Embedded motion controller design based on RTEX network"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3724/sp.j.1087.2013.03604> ;
+    s2a:paperVenue "Journal of Computer Applications"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Motion_Based_Design .
+
+ex:paper_Empirical_atomistic_models_of_materials a s2a:ResearchPaper ;
+    s2a:paperTitle "Empirical atomistic models of materials"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/cbo9781139003582.007> ;
+    s2a:paperVenue "Modeling Materials"^^xsd:string ;
+    s2a:paperYear 2011 ;
+    s2a:relatedToCourse ex:course_From_Nano_to_Macro_Introduction_to_Atomistic_Modeling_Techniques .
+
+ex:paper_Empirical_design_in_structural_engineering a s2a:ResearchPaper ;
+    s2a:paperTitle "Empirical design in structural engineering"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1680/edse.66335.001> ;
+    s2a:paperVenue "Empirical Design in Structural Engineering"^^xsd:string ;
+    s2a:paperYear 2023 ;
+    s2a:relatedToCourse ex:course_Structural_Engineering_Design .
+
+ex:paper_Energy_Approach_to_Material_Hardness_Determination a s2a:ResearchPaper ;
+    s2a:paperTitle "Energy Approach to Material Hardness Determination"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4028/www.scientific.net/amm.788.170> ;
+    s2a:paperVenue "Applied Mechanics and Materials"^^xsd:string ;
+    s2a:paperYear 2015 ;
+    s2a:relatedToCourse ex:course_Mechanics_of_Material_Systems_An_Energy_Approach .
+
+ex:paper_Energy_and_Sustainability_II a s2a:ResearchPaper ;
+    s2a:paperTitle "Energy and Sustainability II"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2495/esu09> ;
+    s2a:paperVenue "WIT Transactions on Ecology and the Environment"^^xsd:string ;
+    s2a:paperYear 2009 ;
+    s2a:relatedToCourse ex:course_Ecology_II_Engineering_for_Sustainability .
+
+ex:paper_Engineering_mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Engineering mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.58225/engineeringmechanics> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Engineering_Mechanics_I .
+
+ex:paper_Engineering_of_Computer_Vision_Algorithms_Using_Evolutionary_Algorithms a s2a:ResearchPaper ;
+    s2a:paperTitle "Engineering of Computer Vision Algorithms Using Evolutionary Algorithms"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-642-04697-1_34> ;
+    s2a:paperVenue "Lecture Notes in Computer Science"^^xsd:string ;
+    s2a:paperYear 2009 ;
+    s2a:relatedToCourse ex:course_Computer_Algorithms_in_Systems_Engineering .
+
+ex:paper_Enhancing_Tumor_Classification_Through_Machine_Learning_Algorithms_for_Breast_Cancer_Diagnosis a s2a:ResearchPaper ;
+    s2a:paperTitle "Enhancing Tumor Classification Through Machine Learning Algorithms for Breast Cancer Diagnosis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.7176/ceis/15-1-08> ;
+    s2a:paperVenue "Computer Engineering and Intelligent Systems"^^xsd:string ;
+    s2a:paperYear 2024 ;
+    s2a:relatedToCourse ex:course_Computer_Algorithms_in_Systems_Engineering .
+
+ex:paper_EntropyOriented_Mechanics_EOM_OrderEnergy_CoOptimization_for_MultiState_Material_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Entropy-Oriented Mechanics (EOM): Order-Energy Co-Optimization for Multi-State Material Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2139/ssrn.5592550> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Mechanics_of_Material_Systems_An_Energy_Approach .
+
+ex:paper_Environmental_management_systems_in_mass_transit a s2a:ResearchPaper ;
+    s2a:paperTitle "Environmental management systems in mass transit"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b978-0-443-15271-9.00011-x> ;
+    s2a:paperVenue "Sustainable Mass Transit"^^xsd:string ;
+    s2a:paperYear 2023 ;
+    s2a:relatedToCourse ex:course_Transit_Management .
+
+ex:paper_Ern_Mszros_Fundamentals_of_Atmospheric_Aerosol_Chemistry a s2a:ResearchPaper ;
+    s2a:paperTitle "Ernö Mészáros: Fundamentals of Atmospheric Aerosol Chemistry"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1023/a:1010753724116> ;
+    s2a:paperVenue "Journal of Atmospheric Chemistry"^^xsd:string ;
+    s2a:paperYear 2001 ;
+    s2a:relatedToCourse ex:course_Atmospheric_Chemistry .
+
+ex:paper_Establishing_a_project_organization_and_a_projectmanagement_process_for_telecommunications_project_management a s2a:ResearchPaper ;
+    s2a:paperTitle "Establishing a project organization and a project-management process for telecommunications project management"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0263-7863(95)95700-n> ;
+    s2a:paperVenue "International Journal of Project Management"^^xsd:string ;
+    s2a:paperYear 1995 ;
+    s2a:relatedToCourse ex:course_Project_Management .
+
+ex:paper_Evaluating_Plan_Alternatives_for_Transportation_System_Sustainability_Atlanta_Metropolitan_Region a s2a:ResearchPaper ;
+    s2a:paperTitle "Evaluating Plan Alternatives for Transportation System Sustainability: Atlanta Metropolitan Region"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1080/15568310902940209> ;
+    s2a:paperVenue "International Journal of Sustainable Transportation"^^xsd:string ;
+    s2a:paperYear 2010 ;
+    s2a:relatedToCourse ex:course_A_Sustainable_Transportation_Plan_for_MIT .
+
+ex:paper_Evaluation_Report_for_Q2Work_Project a s2a:ResearchPaper ;
+    s2a:paperTitle "Evaluation Report for Q2Work Project "^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.51420/report.2024.1> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2024 ;
+    s2a:relatedToCourse ex:course_Project_Evaluation .
+
+ex:paper_Examples_on_the_Schedule_Adjustment_Problem a s2a:ResearchPaper ;
+    s2a:paperTitle "Examples on the Schedule Adjustment Problem"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9781119275909.ch15> ;
+    s2a:paperVenue "Airline Network Planning and Scheduling"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Airline_Schedule_Planning .
+
+ex:paper_Experimental_Mechanics_for_Prognosis_of_Material_State_Changes_in_Heterogeneous_Materials_for_Energy_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Experimental Mechanics for Prognosis of Material State Changes in Heterogeneous Materials for Energy Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-4419-9798-2_1> ;
+    s2a:paperVenue "Experimental Mechanics on Emerging Energy Systems and Materials Volume 5"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Mechanics_of_Material_Systems_An_Energy_Approach .
+
+ex:paper_FINITE_LAYER_METHODS_IN_GEOTECHNICAL_ANALYSIS_JC_SMALL_and a s2a:ResearchPaper ;
+    s2a:paperTitle "FINITE LAYER METHODS IN GEOTECHNICAL ANALYSIS J.C. SMALL and"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781482286656-20> ;
+    s2a:paperVenue "Advanced Geotechnical Analyses"^^xsd:string ;
+    s2a:paperYear 1991 ;
+    s2a:relatedToCourse ex:course_Advanced_Geotechnical_Engineering .
+
+ex:paper_Figure_34_Real_estate_transactions_construction_volume_and_number_of_new_construction_permits a s2a:ResearchPaper ;
+    s2a:paperTitle "Figure 3.4. Real estate transactions construction volume and number of new construction permits"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1787/561337770232> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_ECommerce_and_the_Internet_in_Real_Estate_and_Construction .
+
+ex:paper_Fluid_Dynamics a s2a:ResearchPaper ;
+    s2a:paperTitle "Fluid Dynamics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2307/j.ctv346t6x.8> ;
+    s2a:paperVenue "Princeton Guide to Advanced Physics"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Advanced_Fluid_Dynamics_of_the_Environment .
+
+ex:paper_Fluid_Dynamics_of_Gas__Solid_Fluidized_Beds a s2a:ResearchPaper ;
+    s2a:paperTitle "Fluid Dynamics of Gas - Solid Fluidized Beds"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.5772/25791> ;
+    s2a:paperVenue "Advanced Fluid Dynamics"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Advanced_Fluid_Dynamics_of_the_Environment .
+
+ex:paper_Following_the_Water_in_Groundwater_Hydrology a s2a:ResearchPaper ;
+    s2a:paperTitle "Following the Water in Groundwater Hydrology"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.5917/jagh.63.301> ;
+    s2a:paperVenue "Journal of Groundwater Hydrology"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Groundwater_Hydrology .
+
+ex:paper_Food_waste_harms_climate_water_land_and_biodiversity_FAO a s2a:ResearchPaper ;
+    s2a:paperTitle "Food waste harms climate water land and biodiversity: FAO"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1071/ec13213> ;
+    s2a:paperVenue "10.1071/ec13213"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Land_Water_Food_and_Climate .
+
+ex:paper_Foreword_on_special_issue_of_groundwater_governance_at_the_60th_Anniversary_of_Japanese_Association_of_Groundwater_Hydrology a s2a:ResearchPaper ;
+    s2a:paperTitle "Foreword on special issue of groundwater governance at the 60th Anniversary of Japanese Association of Groundwater Hydrology"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.5917/jagh.62.163> ;
+    s2a:paperVenue "Journal of Groundwater Hydrology"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Groundwater_Hydrology .
+
+ex:paper_Foundations_of_Solid_Mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Foundations of Solid Mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-94-011-3814-7> ;
+    s2a:paperVenue "Solid Mechanics and Its Applications"^^xsd:string ;
+    s2a:paperYear 1991 ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics .
+
+ex:paper_Fracture_mechanics_based_design_of_reinforced_concrete_beamsAn_analytical_study a s2a:ResearchPaper ;
+    s2a:paperTitle "Fracture mechanics based design of reinforced concrete beams-An analytical study"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.21012/fc10.244962> ;
+    s2a:paperVenue "Proceedings of the 10th International Conference on Fracture Mechanics of Concrete and Concrete Structures"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Mechanics_and_Design_of_Concrete_Structures .
+
+ex:paper_Freight_Transportation_Planning_Models_and_Methods a s2a:ResearchPaper ;
+    s2a:paperTitle "Freight Transportation Planning: Models and Methods"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420042283-9> ;
+    s2a:paperVenue "Transportation Systems Planning"^^xsd:string ;
+    s2a:paperYear 2002 ;
+    s2a:relatedToCourse ex:course_Logistical_and_Transportation_Planning_Methods .
+
+ex:paper_Frontmatter a s2a:ResearchPaper ;
+    s2a:paperTitle "Frontmatter"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1515/9781503625204-fm> ;
+    s2a:paperVenue "Vernacular Modernism"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_The_Impact_of_Globalization_on_the_Built_Environment .
+
+ex:paper_Fundamentals_of_Remote_Sensing_and_Geographic_Information_Systems_for_Hydrologic_Applications a s2a:ResearchPaper ;
+    s2a:paperTitle "Fundamentals of Remote Sensing and Geographic Information Systems for Hydrologic Applications"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b13148-18> ;
+    s2a:paperVenue "Environmental Hydrology"^^xsd:string ;
+    s2a:paperYear 2003 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Applications_of_Geographic_Information_Systems .
+
+ex:paper_Fundamentals_of_Soil_Behavior a s2a:ResearchPaper ;
+    s2a:paperTitle "Fundamentals of Soil Behavior"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1097/00010694-199407000-00009> ;
+    s2a:paperVenue "Soil Science"^^xsd:string ;
+    s2a:paperYear 1994 ;
+    s2a:relatedToCourse ex:course_Soil_Behavior .
+
+ex:paper_Fuzzy_Variables_and_Measurement_Uncertainty a s2a:ResearchPaper ;
+    s2a:paperTitle "Fuzzy Variables and Measurement Uncertainty"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-0-387-46328-5_2> ;
+    s2a:paperVenue "Springer Series in Reliability Engineering"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Uncertainty_in_Engineering .
+
+ex:paper_GERMAN_ENVIRONMENTAL_POLICYMAKING_PROCESSES a s2a:ResearchPaper ;
+    s2a:paperTitle "GERMAN ENVIRONMENTAL POLICY-MAKING PROCESSES"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2307/j.ctt1dt00hh.9> ;
+    s2a:paperVenue "Controlling Environmental Policy"^^xsd:string ;
+    s2a:paperYear 1995 ;
+    s2a:relatedToCourse ex:course_Transportation_Policy_and_Environmental_Limits .
+
+ex:paper_GS_111__Uncertainty_statistics_and_probability_1 a s2a:ResearchPaper ;
+    s2a:paperTitle "GS_111 — Uncertainty statistics and probability (1)"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b11332-428> ;
+    s2a:paperVenue "Applications of Statistics and Probability in Civil Engineering"^^xsd:string ;
+    s2a:paperYear 2011 ;
+    s2a:relatedToCourse ex:course_Probability_and_Statistics_in_Engineering .
+
+ex:paper_GS_121__Uncertainty_statistics_and_probability_2 a s2a:ResearchPaper ;
+    s2a:paperTitle "GS_121 — Uncertainty statistics and probability (2)"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b11332-434> ;
+    s2a:paperVenue "Applications of Statistics and Probability in Civil Engineering"^^xsd:string ;
+    s2a:paperYear 2011 ;
+    s2a:relatedToCourse ex:course_Probability_and_Statistics_in_Engineering .
+
+ex:paper_General_and_Environmental_Engineering a s2a:ResearchPaper ;
+    s2a:paperTitle "General and Environmental Engineering"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-4613-0599-6_17>,
+        <https://doi.org/10.1007/978-1-4684-3620-4_17> ;
+    s2a:paperVenue "Masters Theses in the Pure and Applied Sciences"^^xsd:string ;
+    s2a:paperYear 1979,
+        1989 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Masters_of_Engineering_Project .
+
+ex:paper_Geographic_Information_Systems_for_Risk_Evaluation_Perspectives_on_Applications_to_Environmental_Health a s2a:ResearchPaper ;
+    s2a:paperTitle "Geographic Information Systems for Risk Evaluation: Perspectives on Applications to Environmental Health"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1559/152304097782476960> ;
+    s2a:paperVenue "Cartography and Geographic Information Systems"^^xsd:string ;
+    s2a:paperYear 1997 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Applications_of_Geographic_Information_Systems .
+
+ex:paper_Geographic_Information_Systems_in_Mining_Applications_and_Management_Potential a s2a:ResearchPaper ;
+    s2a:paperTitle "Geographic Information Systems in Mining: Applications and Management Potential"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.70729/se25716114733> ;
+    s2a:paperVenue "International Journal of Scientific Engineering and Research"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Applications_of_Geographic_Information_Systems .
+
+ex:paper_Graduate_research_fellowships_in_advanced_materials_mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Graduate research fellowships in advanced materials mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0167-6636(86)90025-6> ;
+    s2a:paperVenue "Mechanics of Materials"^^xsd:string ;
+    s2a:paperYear 1986 ;
+    s2a:relatedToCourse ex:course_Mechanics__Materials_I .
+
+ex:paper_Green_conceptual_design_toward_design_for_environmental_sustainability a s2a:ResearchPaper ;
+    s2a:paperTitle "“Green” conceptual design toward design for environmental sustainability"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b978-0-12-819482-9.00008-3> ;
+    s2a:paperVenue "Design for Sustainability"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Design_for_Sustainability .
+
+ex:paper_Hardware_algorithms_for_VLSI_systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Hardware algorithms for VLSI systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/bfb0043450> ;
+    s2a:paperVenue "Lecture Notes in Computer Science"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Computer_Algorithms_in_Systems_Engineering .
+
+ex:paper_How_does_globalization_affect_tourism a s2a:ResearchPaper ;
+    s2a:paperTitle "How does globalization affect tourism?"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2495/ices20140841> ;
+    s2a:paperVenue "WIT Transactions on The Built Environment"^^xsd:string ;
+    s2a:paperYear 2014 ;
+    s2a:relatedToCourse ex:course_The_Impact_of_Globalization_on_the_Built_Environment .
+
+ex:paper_How_does_the_ridehailing_systems_demand_affect_individual_transport_regulation a s2a:ResearchPaper ;
+    s2a:paperTitle "How does the ride-hailing systems demand affect individual transport regulation?"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.retrec.2018.06.010> ;
+    s2a:paperVenue "Research in Transportation Economics"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Transportation_Systems_Analysis_Demand_and_Economics .
+
+ex:paper_How_slot_machines_work__and_why_you_should_think_twice_before_playing_them a s2a:ResearchPaper ;
+    s2a:paperTitle "How slot machines work – and why you should think twice before playing them"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.64628/aai.sr93v669c> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_How_and_Why_Machines_Work .
+
+ex:paper_INTRODUCTION a s2a:ResearchPaper ;
+    s2a:paperTitle "INTRODUCTION"^^xsd:string,
+        "INTRODUCTION:"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9780470432853.ch1>,
+        <https://doi.org/10.1080/19648189.2011.9695301>,
+        <https://doi.org/10.2307/j.ctt16f8c7f.5>,
+        <https://doi.org/10.4135/9781071938904.n1> ;
+    s2a:paperVenue "Earth Life and System"^^xsd:string,
+        "European Journal of Environmental and Civil Engineering"^^xsd:string,
+        "Longitudinal Network Models"^^xsd:string,
+        "Transportation Infrastructure Security Utilizing Intelligent Transportation Systems"^^xsd:string ;
+    s2a:paperYear 2008,
+        2011,
+        2015,
+        2023 ;
+    s2a:relatedToCourse ex:course_An_Introduction_to_Intelligent_Transportation_Systems,
+        ex:course_Ecology_I_The_Earth_System,
+        ex:course_Introduction_to_Civil_and_Environmental_Engineering_Design_I,
+        ex:course_Introduction_to_Network_Models .
+
+ex:paper_I_The_Economics_of_Transportation a s2a:ResearchPaper ;
+    s2a:paperTitle "I. The Economics of Transportation"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.7312/weld91568-003> ;
+    s2a:paperVenue "India’S Demand for Transportation"^^xsd:string ;
+    s2a:paperYear 1968 ;
+    s2a:relatedToCourse ex:course_Transportation_Systems_Analysis_Demand_and_Economics .
+
+ex:paper_Impact_evaluation_of_the_National_Rural_Livelihoods_Project a s2a:ResearchPaper ;
+    s2a:paperTitle "Impact evaluation of the National Rural Livelihoods Project"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.23846/b/ie/202013> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Project_Evaluation .
+
+ex:paper_Impact_of_industrial_waste_fillers_in_selfcompacting_mortars_A_comparative_analysis_of_mechanical_performance a s2a:ResearchPaper ;
+    s2a:paperTitle "Impact of industrial waste fillers in self-compacting mortars A comparative analysis of mechanical performance"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.17515/resm2025-978me0718rs> ;
+    s2a:paperVenue "Research on Engineering Structures and Materials"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Civil_Engineering_Materials_Laboratory .
+
+ex:paper_Impossibility_of_superconductivity_electric_flow a s2a:ResearchPaper ;
+    s2a:paperTitle "Impossibility of superconductivity electric flow"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.17816/transsyst201623119-132> ;
+    s2a:paperVenue "Transportation systems and technology"^^xsd:string ;
+    s2a:paperYear 2016 ;
+    s2a:relatedToCourse ex:course_Transportation_Flow_Systems .
+
+ex:paper_Increased_Lead_in_Water_Associated_with_Iron_Corrosion a s2a:ResearchPaper ;
+    s2a:paperTitle "Increased Lead in Water Associated with Iron Corrosion"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1089/ees.2014.0400> ;
+    s2a:paperVenue "Environmental Engineering Science"^^xsd:string ;
+    s2a:paperYear 2015 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Masters_of_Engineering_Project .
+
+ex:paper_Industrial_Ecology_and_Sustainable_Engineering_Concepts a s2a:ResearchPaper ;
+    s2a:paperTitle "Industrial Ecology and Sustainable Engineering Concepts"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1142/9789811277610_0004> ;
+    s2a:paperVenue "Industrial Ecology and Sustainability"^^xsd:string ;
+    s2a:paperYear 2023 ;
+    s2a:relatedToCourse ex:course_Ecology_II_Engineering_for_Sustainability .
+
+ex:paper_Innovation_In_Solid_Mechanics_Laboratory a s2a:ResearchPaper ;
+    s2a:paperTitle "Innovation In Solid Mechanics Laboratory"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.18260/1-2--11939> ;
+    s2a:paperVenue "2003 Annual Conference Proceedings"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics_Laboratory .
+
+ex:paper_Integrating_small_island_sustainability a s2a:ResearchPaper ;
+    s2a:paperTitle "Integrating small island sustainability"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2495/islands120091> ;
+    s2a:paperVenue "WIT Transactions on Ecology and The Environment"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Ecology_II_Engineering_for_Sustainability .
+
+ex:paper_Integration_of_Database_and_Internet_Technologies_for_Scalable_EndtoEnd_ECommerce_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Integration of Database and Internet Technologies for Scalable End-to-End E-Commerce Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4018/9781591400493.ch006> ;
+    s2a:paperVenue "Architectural Issues of Web-Enabled Electronic Business"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Database_Internet_and_Systems_Integration_Technologies .
+
+ex:paper_Integrative_Design_Classes_for_Environmental_Sustainability_of_Interior_Architectural_Design a s2a:ResearchPaper ;
+    s2a:paperTitle "Integrative Design Classes for Environmental Sustainability of Interior Architectural Design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3390/su12187383> ;
+    s2a:paperVenue "Sustainability"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Design_for_Sustainability .
+
+ex:paper_Intelligent_DataDriven_Energy_Flow_Controllers_for_Renewable_Energy_and_Electrified_Transportation_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Intelligent Data-Driven Energy Flow Controllers for Renewable Energy and Electrified Transportation Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.31390/gradschool_dissertations.5394> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Transportation_Flow_Systems .
+
+ex:paper_Intelligent_Data_Analysis_in_Environmental_Sampling a s2a:ResearchPaper ;
+    s2a:paperTitle "Intelligent Data Analysis in Environmental Sampling"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1109/idaacs.2005.283056> ;
+    s2a:paperVenue "2005 IEEE Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_Computing_and_Data_Analysis_for_Environmental_Applications .
+
+ex:paper_Introduction a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9783527618835.ch1>,
+        <https://doi.org/10.1007/978-81-322-2322-1_1>,
+        <https://doi.org/10.1007/978-81-322-3634-4_1>,
+        <https://doi.org/10.1017/cbo9781139003582.003>,
+        <https://doi.org/10.1117/3.2525400.ch1>,
+        <https://doi.org/10.1201/9781003346685-1>,
+        <https://doi.org/10.1201/b15578-4> ;
+    s2a:paperVenue "Advanced Geotechnical Engineering"^^xsd:string,
+        "Computational Physics"^^xsd:string,
+        "Experiment Design for Civil Engineering"^^xsd:string,
+        "Modeling Materials"^^xsd:string,
+        "Sensor and Data Fusion for Intelligent Transportation Systems"^^xsd:string,
+        "Springer Transactions in Civil and Environmental Engineering"^^xsd:string ;
+    s2a:paperYear 2007,
+        2011,
+        2013,
+        2015,
+        2017,
+        2019,
+        2023 ;
+    s2a:relatedToCourse ex:course_Advanced_Geotechnical_Engineering,
+        ex:course_An_Introduction_to_Intelligent_Transportation_Systems,
+        ex:course_From_Nano_to_Macro_Introduction_to_Atomistic_Modeling_Techniques,
+        ex:course_Introduction_to_Civil_Engineering_Design,
+        ex:course_Introduction_to_Civil_and_Environmental_Engineering_Design_I,
+        ex:course_Introduction_to_Computers_and_Engineering_Problem_Solving .
+
+ex:paper_Introduction_Earth_Life_and_System a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction: Earth Life and System"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1515/9780823265275-003> ;
+    s2a:paperVenue "Earth Life and System"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Ecology_I_The_Earth_System .
+
+ex:paper_Introduction_Introduction a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction: Introduction"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2514/5.9781600866630.0001.0006> ;
+    s2a:paperVenue "Air Transportation Systems Engineering"^^xsd:string ;
+    s2a:paperYear 2001 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Transportation_Systems .
+
+ex:paper_Introduction_To_Transportation_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction To Transportation Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420063790.ch1> ;
+    s2a:paperVenue "Transportation Systems Security"^^xsd:string ;
+    s2a:paperYear 2008 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Transportation_Systems .
+
+ex:paper_Introduction_to_Atmospheric_Chemistry a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction to Atmospheric Chemistry"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-4-441-55870-5_1> ;
+    s2a:paperVenue "Springer Atmospheric Sciences"^^xsd:string ;
+    s2a:paperYear 2016 ;
+    s2a:relatedToCourse ex:course_Atmospheric_Chemistry .
+
+ex:paper_Introduction_to_Intelligent_Transportation_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction to Intelligent Transportation Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-319-28183-4_1> ;
+    s2a:paperVenue "Studies in Systems Decision and Control"^^xsd:string ;
+    s2a:paperYear 2016 ;
+    s2a:relatedToCourse ex:course_An_Introduction_to_Intelligent_Transportation_Systems .
+
+ex:paper_Introduction_to_Mental_disorders_network_models_and_dynamical_systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction to Mental disorders network models and dynamical systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1093/med/9780198796022.003.0010> ;
+    s2a:paperVenue "Oxford Medicine Online"^^xsd:string ;
+    s2a:paperYear 2017 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Network_Models .
+
+ex:paper_Introduction_to_Problem_Solving a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction to Problem Solving"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781003573814-1> ;
+    s2a:paperVenue "Engineering Technology Problem Solving"^^xsd:string ;
+    s2a:paperYear 2024 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Computers_and_Engineering_Problem_Solving .
+
+ex:paper_Introduction_to_Solid_Mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction to Solid Mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/9781009479219.002> ;
+    s2a:paperVenue "An Introduction to Solid Mechanics"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics .
+
+ex:paper_Introduction_to_SubBranches_of_Civil_Engineering_Fields_through_a_Creative_Freshmen_Civil_Engineering_Design_Course a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction to Sub-Branches of Civil Engineering Fields through a Creative Freshmen Civil Engineering Design Course"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.18260/p.24372> ;
+    s2a:paperVenue "2015 ASEE Annual Conference and Exposition Proceedings"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Introduction_to_Civil_Engineering_Design .
+
+ex:paper_Introduction_to_Transportation_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Introduction to Transportation Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420063790-6> ;
+    s2a:paperVenue "Transportation Systems Security"^^xsd:string ;
+    s2a:paperYear 2008 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Transportation_Systems,
+        ex:course_Transportation_Systems .
+
+ex:paper_Inverse_Modeling_for_Atmospheric_Chemistry a s2a:ResearchPaper ;
+    s2a:paperTitle "Inverse Modeling for Atmospheric Chemistry"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/9781316544754.012> ;
+    s2a:paperVenue "Modeling of Atmospheric Chemistry"^^xsd:string ;
+    s2a:paperYear 2017 ;
+    s2a:relatedToCourse ex:course_Atmospheric_Chemistry .
+
+ex:paper_Island_Sustainability_II a s2a:ResearchPaper ;
+    s2a:paperTitle "Island Sustainability II"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.2495/islands12> ;
+    s2a:paperVenue "WIT Transactions on Ecology and The Environment"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Ecology_II_Engineering_for_Sustainability .
+
+ex:paper_Iutam_Symposium_Advanced_Optical_Methods_and_Applications_in_Solid_Mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Iutam Symposium Advanced Optical Methods and Applications in Solid Mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/0-306-46948-0_68> ;
+    s2a:paperVenue "Solid Mechanics and its Applications"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics .
+
+ex:paper_Journal_of_Economic_Dynamics_and_Control a s2a:ResearchPaper ;
+    s2a:paperTitle "Journal of Economic Dynamics and Control"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.jedc.2013.05.013> ;
+    s2a:paperVenue "Journal of Economic Dynamics and Control"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Control_I .
+
+ex:paper_LINGUISTIC_FOUNDATIONS_OF_SOFTWARE_ENGINEERING a s2a:ResearchPaper ;
+    s2a:paperTitle "LINGUISTIC FOUNDATIONS OF SOFTWARE ENGINEERING"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780203496091-15> ;
+    s2a:paperVenue "Software Engineering Foundations"^^xsd:string ;
+    s2a:paperYear 2007 ;
+    s2a:relatedToCourse ex:course_Foundations_of_Software_Engineering .
+
+ex:paper_Laboratory_Testing a s2a:ResearchPaper ;
+    s2a:paperTitle "Laboratory Testing"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780429275111-13> ;
+    s2a:paperVenue "Civil Engineering Materials"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Civil_Engineering_Materials_Laboratory .
+
+ex:paper_MECHANICS_OF_COMPOSITE_MATERIALS a s2a:ResearchPaper ;
+    s2a:paperTitle "MECHANICS OF COMPOSITE MATERIALS"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b978-0-08-029384-4.50040-7> ;
+    s2a:paperVenue "Mechanics of Composite Materials"^^xsd:string ;
+    s2a:paperYear 1983 ;
+    s2a:relatedToCourse ex:course_Mechanics__Materials_I .
+
+ex:paper_MODELS_AND_DESIGN_IN_ENGINEERING a s2a:ResearchPaper ;
+    s2a:paperTitle "MODELS AND DESIGN IN ENGINEERING"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1080/02630259908970248> ;
+    s2a:paperVenue "Civil Engineering and Environmental Systems"^^xsd:string ;
+    s2a:paperYear 1999 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Civil_and_Environmental_Engineering_Design_I .
+
+ex:paper_Maglev_trends_in_public_transport_the_perspectives_of_maglev_transportation_systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Maglev trends in public transport: the perspectives of maglev transportation systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.17816/transsyst201843s15-12> ;
+    s2a:paperVenue "Transportation Systems and Technology"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Public_Transportation_Systems .
+
+ex:paper_Mechanics_of_Materials_Special_Issue_Nanostructured_Materials a s2a:ResearchPaper ;
+    s2a:paperTitle "Mechanics of Materials: Special Issue “Nanostructured Materials”"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.mechmat.2013.09.012> ;
+    s2a:paperVenue "Mechanics of Materials"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Mechanics__Materials_I .
+
+ex:paper_Mechanics_of_creep_brittle_materials a s2a:ResearchPaper ;
+    s2a:paperTitle "Mechanics of creep brittle materials"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0167-6636(91)90042-x> ;
+    s2a:paperVenue "Mechanics of Materials"^^xsd:string ;
+    s2a:paperYear 1991 ;
+    s2a:relatedToCourse ex:course_Mechanics__Materials_I .
+
+ex:paper_Microwave_Beamforming_Networks_for_Intelligent_Transportation_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Microwave Beamforming Networks for Intelligent Transportation Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.5772/26180> ;
+    s2a:paperVenue "Intelligent Transportation Systems"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Transportation_Systems .
+
+ex:paper_NOM a s2a:ResearchPaper ;
+    s2a:paperTitle "#NOM?"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b15431-5>,
+        <https://doi.org/10.1201/b19526-14> ;
+    s2a:paperVenue "Green Design and Manufacturing for Sustainability"^^xsd:string,
+        "Mechanics of Materials"^^xsd:string ;
+    s2a:paperYear 2013,
+        2015 ;
+    s2a:relatedToCourse ex:course_Design_for_Sustainability,
+        ex:course_Mechanics__Materials_I .
+
+ex:paper_NUMERICAL_MODELING_OF_FLOW_NATURAL_CONVECTION_IN_A_THERMOSIPHON_THERMAL_PANACHE a s2a:ResearchPaper ;
+    s2a:paperTitle "NUMERICAL MODELING OF FLOW NATURAL CONVECTION IN A THERMOSIPHON: THERMAL PANACHE."^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.21474/ijar01/6655> ;
+    s2a:paperVenue "International Journal of Advanced Research"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics_Laboratory .
+
+ex:paper_National_transportation_policy_Effective_strategy_or_political_symbolism_A_case_study_in_maritime_policy_development a s2a:ResearchPaper ;
+    s2a:paperTitle "National transportation policy: Effective strategy or political symbolism? A case study in maritime policy development"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0965-8564(96)81127-x> ;
+    s2a:paperVenue "Transportation Research Part A: Policy and Practice"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Transportation_Policy_Strategy_and_Management .
+
+ex:paper_Network_Models a s2a:ResearchPaper ;
+    s2a:paperTitle "Network Models"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/cbo9781139088510.005>,
+        <https://doi.org/10.1201/b18861-33> ;
+    s2a:paperVenue "Introduction to Computational Models with Python"^^xsd:string,
+        "Social Media Mining"^^xsd:string ;
+    s2a:paperYear 2014,
+        2015 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Network_Models .
+
+ex:paper_Neural_networks_and_intellectusing_model_based_concepts a s2a:ResearchPaper ;
+    s2a:paperTitle "‘Neural networks and intellect-using model based concepts’"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.conengprac.2004.05.004> ;
+    s2a:paperVenue "Control Engineering Practice"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_Masters_of_Engineering_Concepts_of_Engineering_Practice .
+
+ex:paper_Nonlinear_Dynamics_and_Modeling a s2a:ResearchPaper ;
+    s2a:paperTitle "Nonlinear Dynamics and Modeling"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781315216270-6> ;
+    s2a:paperVenue "Modeling and Control of Precision Actuators"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Modeling_Dynamics_and_Control_I .
+
+ex:paper_Notes a s2a:ResearchPaper ;
+    s2a:paperTitle "Notes"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1515/9781503625204-011> ;
+    s2a:paperVenue "Vernacular Modernism"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_The_Impact_of_Globalization_on_the_Built_Environment .
+
+ex:paper_Oceanic_Fate_and_Transport_of_Chemicals a s2a:ResearchPaper ;
+    s2a:paperTitle "Oceanic Fate and Transport of Chemicals"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-4614-5731-2_12> ;
+    s2a:paperVenue "Transport and Fate of Chemicals in the Environment"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Chemicals_in_the_Environment_Fate_and_Transport .
+
+ex:paper_Optimization_in_Structural_Control_Problems a s2a:ResearchPaper ;
+    s2a:paperTitle "Optimization in Structural Control Problems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9781119453628.ch7> ;
+    s2a:paperVenue "Metaheuristics for Structural Design and Analysis"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Structural_Analysis_and_Control .
+
+ex:paper_Oxidation_and_reduction a s2a:ResearchPaper ;
+    s2a:paperTitle "Oxidation and reduction"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1093/hesc/9780198502838.003.0005> ;
+    s2a:paperVenue "Aquatic Environmental Chemistry"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Aquatic_Chemistry .
+
+ex:paper_PHILOSOPHICAL_FOUNDATIONS_OF_SOFTWARE_ENGINEERING a s2a:ResearchPaper ;
+    s2a:paperTitle "PHILOSOPHICAL FOUNDATIONS OF SOFTWARE ENGINEERING"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780203496091-12> ;
+    s2a:paperVenue "Software Engineering Foundations"^^xsd:string ;
+    s2a:paperYear 2007 ;
+    s2a:relatedToCourse ex:course_Foundations_of_Software_Engineering .
+
+ex:paper_PRECISION_CONTROL_METHOD_FOR_PRESTRESSING_CONSTRUCTION_OF_SUSPENDOME_STRUCTURES a s2a:ResearchPaper ;
+    s2a:paperTitle "PRECISION CONTROL METHOD FOR PRE-STRESSING CONSTRUCTION OF SUSPEN-DOME STRUCTURES"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.18057/ijasc.2014.10.4.3> ;
+    s2a:paperVenue "Volume 10 Number 4"^^xsd:string ;
+    s2a:paperYear 2014 ;
+    s2a:relatedToCourse ex:course_Civil_Engineering_Materials_Laboratory .
+
+ex:paper_PROJECT_EVALUATION_AND_REVIEW_TECHNIQUE a s2a:ResearchPaper ;
+    s2a:paperTitle "PROJECT EVALUATION AND REVIEW TECHNIQUE"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/springerreference_7102> ;
+    s2a:paperVenue "SpringerReference"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Project_Evaluation .
+
+ex:paper_Packaging_Small_load_carrier_systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Packaging. Small load carrier systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3403/bsen13199> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Carrier_Systems .
+
+ex:paper_Part_20_Concrete_structures_concrete_design a s2a:ResearchPaper ;
+    s2a:paperTitle "Part 20: Concrete structures concrete design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b15963-270> ;
+    s2a:paperVenue "Research and Applications in Structural Engineering Mechanics and Computation"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Mechanics_and_Design_of_Concrete_Structures .
+
+ex:paper_Participatory_Geographic_Information_Systems_Within_a_Crowdsourcing_Environment_With_Special_Reference_to_Volunteered_Geographic_Information a s2a:ResearchPaper ;
+    s2a:paperTitle "Participatory Geographic Information Systems Within a Crowdsourcing Environment With Special Reference to Volunteered Geographic Information"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4018/978-1-5225-7033-2.ch036> ;
+    s2a:paperVenue "Environmental Information Systems"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Applications_of_Geographic_Information_Systems .
+
+ex:paper_Permeability a s2a:ResearchPaper ;
+    s2a:paperTitle "Permeability"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b15955-7> ;
+    s2a:paperVenue "Advanced Soil Mechanics"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Advanced_Soil_Mechanics .
+
+ex:paper_Peter_V_Hobbs_Basic_Physical_Chemistry_for_the_Atmospheric_Sciences_and_Introduction_to_Atmospheric_Chemistry a s2a:ResearchPaper ;
+    s2a:paperTitle "Peter V. Hobbs Basic Physical Chemistry for the Atmospheric Sciences and Introduction to Atmospheric Chemistry"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1023/a:1010670623614> ;
+    s2a:paperVenue "Journal of Atmospheric Chemistry"^^xsd:string ;
+    s2a:paperYear 2001 ;
+    s2a:relatedToCourse ex:course_Atmospheric_Chemistry .
+
+ex:paper_Phosphorus_Transport_in_Streams_Processes_and_Modeling_Considerations a s2a:ResearchPaper ;
+    s2a:paperTitle "Phosphorus Transport in Streams: Processes and Modeling Considerations"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420005417-11> ;
+    s2a:paperVenue "Modeling Phosphorus in the Environment"^^xsd:string ;
+    s2a:paperYear 2006 ;
+    s2a:relatedToCourse ex:course_Transport_Processes_in_the_Environment .
+
+ex:paper_PhysicoChemical_Processes_for_Water_and_Wastewater_Treatment a s2a:ResearchPaper ;
+    s2a:paperTitle "Physico-Chemical Processes for Water and Wastewater Treatment"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/9781108115896.008> ;
+    s2a:paperVenue "Water and Wastewater Engineering"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Water_and_Wastewater_Treatment_Engineering .
+
+ex:paper_Ponton_flow_bridges_from_metal_polyethylene_pipes a s2a:ResearchPaper ;
+    s2a:paperTitle "Ponton (flow) bridges from metal polyethylene pipes"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.17816/transsyst20217137-45> ;
+    s2a:paperVenue "Transportation Systems and Technology"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Transportation_Flow_Systems .
+
+ex:paper_Potential_use_of_Electrochemical_Redox_for_In_Situ_Remediation_of_Benzene a s2a:ResearchPaper ;
+    s2a:paperTitle "Potential use of Electrochemical Redox for In Situ Remediation of Benzene"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/40789(168)38> ;
+    s2a:paperVenue "Waste Containment and Remediation"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_Waste_Containment_and_Remediation_Technology .
+
+ex:paper_Prediction_of_Municipal_Solid_Waste_Landfill_Settlement_with_Leachate_Recirculation a s2a:ResearchPaper ;
+    s2a:paperTitle "Prediction of Municipal Solid Waste Landfill Settlement with Leachate Recirculation"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/40789(168)50> ;
+    s2a:paperVenue "Waste Containment and Remediation"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_Waste_Containment_and_Remediation_Technology .
+
+ex:paper_Preface a s2a:ResearchPaper ;
+    s2a:paperTitle "Preface"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.21495/em2025-i> ;
+    s2a:paperVenue "Engineering Mechanics"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Engineering_Mechanics_II .
+
+ex:paper_Probabilistic_engineering_mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Probabilistic engineering mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0266-8920(93)90032-q>,
+        <https://doi.org/10.1016/s0266-8920(96)90002-8> ;
+    s2a:paperVenue "Probabilistic Engineering Mechanics"^^xsd:string ;
+    s2a:paperYear 1993,
+        1996 ;
+    s2a:relatedToCourse ex:course_Engineering_Mechanics_I,
+        ex:course_Engineering_Mechanics_II .
+
+ex:paper_Probability_and_Statistics_Descriptive_Statistics a s2a:ResearchPaper ;
+    s2a:paperTitle "Probability and Statistics (Descriptive Statistics)"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781315274867-26> ;
+    s2a:paperVenue "Engineering Modelling and Analysis"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Probability_and_Statistics_in_Engineering .
+
+ex:paper_Problemsolving_with_personal_computers a s2a:ResearchPaper ;
+    s2a:paperTitle "Problem-solving with personal computers"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/cbo9781139170925.014> ;
+    s2a:paperVenue "Introduction to Physical Chemistry"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Introduction_to_Computers_and_Engineering_Problem_Solving .
+
+ex:paper_Progress_of_groundwater_hydrology_and_the_groundwater_governance a s2a:ResearchPaper ;
+    s2a:paperTitle "Progress of groundwater hydrology and the groundwater governance"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.5917/jagh.62.167> ;
+    s2a:paperVenue "Journal of Groundwater Hydrology"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Groundwater_Hydrology .
+
+ex:paper_Project_Evaluation_Management a s2a:ResearchPaper ;
+    s2a:paperTitle "Project Evaluation Management"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b17345-13> ;
+    s2a:paperVenue "The Basics of Project Evaluation and Lessons Learned"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Project_Evaluation .
+
+ex:paper_Project_management a s2a:ResearchPaper ;
+    s2a:paperTitle "Project management"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3403/01970881>,
+        <https://doi.org/10.3403/02575754> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Project_Management .
+
+ex:paper_Project_management_Project_Management a s2a:ResearchPaper ;
+    s2a:paperTitle "Project management: Project Management"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.12737/1859087> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2023 ;
+    s2a:relatedToCourse ex:course_Project_Management .
+
+ex:paper_Public_Transportation_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Public Transportation Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b978-0-12-803818-5.00007-x>,
+        <https://doi.org/10.1016/b978-0-323-90813-9.00007-2> ;
+    s2a:paperVenue "Transportation Engineering"^^xsd:string ;
+    s2a:paperYear 2017,
+        2022 ;
+    s2a:relatedToCourse ex:course_Public_Transportation_Systems .
+
+ex:paper_Public_Transportation_Systems_for_Urban_Planners_and_Designers_The_Urban_Morphology_of_Public_Transportation_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Public Transportation Systems for Urban Planners and Designers: The Urban Morphology of Public Transportation Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/9780784413210.008> ;
+    s2a:paperVenue "Urban Public Transportation Systems 2013"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Public_Transportation_Systems,
+        ex:course_Transportation_Systems .
+
+ex:paper_Recent_Research_in_Composite_and_Sandwich_Plate_Dynamics a s2a:ResearchPaper ;
+    s2a:paperTitle "Recent Research in Composite and Sandwich Plate Dynamics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1177/058310247901101003> ;
+    s2a:paperVenue "The Shock and Vibration Digest"^^xsd:string ;
+    s2a:paperYear 1979 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Vibration_13013J .
+
+ex:paper_ReliabilityBased_Structural_Design a s2a:ResearchPaper ;
+    s2a:paperTitle "Reliability-Based Structural Design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420039931-18> ;
+    s2a:paperVenue "Handbook of Structural Engineering"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_Structural_Engineering_Design .
+
+ex:paper_Research_Needs_in_Solid_Waste_Mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Research Needs in Solid Waste Mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/41146(395)12> ;
+    s2a:paperVenue "Geotechnical Characterization Field Measurement and Laboratory Testing of Municipal Solid Waste"^^xsd:string ;
+    s2a:paperYear 2011 ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics_Laboratory .
+
+ex:paper_Response_of_Plain_and_Reinforced_Concrete_Structures_Under_Cyclic_Loadings a s2a:ResearchPaper ;
+    s2a:paperTitle "Response of Plain and Reinforced Concrete Structures Under Cyclic Loadings"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.14359/2710> ;
+    s2a:paperVenue "SP-134: Concrete Design Based on Fracture Mechanics"^^xsd:string ;
+    s2a:paperYear 1992 ;
+    s2a:relatedToCourse ex:course_Mechanics_and_Design_of_Concrete_Structures .
+
+ex:paper_Review_of_research_solid_mechanics_laboratory_for_20202022 a s2a:ResearchPaper ;
+    s2a:paperTitle "Review of research solid mechanics laboratory for 2020–2022"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.21662/mfs2022.1.006> ;
+    s2a:paperVenue "Multiphase Systems"^^xsd:string ;
+    s2a:paperYear 2022 ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics_Laboratory .
+
+ex:paper_Richard_Goody_Principles_of_Atmospheric_Physics_and_Chemistry a s2a:ResearchPaper ;
+    s2a:paperTitle "Richard Goody: Principles of Atmospheric Physics and Chemistry"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1023/a:1005917128162> ;
+    s2a:paperVenue "Journal of Atmospheric Chemistry"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Atmospheric_Chemistry .
+
+ex:paper_Robot_Dynamics_Modeling a s2a:ResearchPaper ;
+    s2a:paperTitle "Robot Dynamics Modeling"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781003129165-3> ;
+    s2a:paperVenue "Advanced Dynamics Modeling Duality and Control of Robotic Systems"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Modeling_Dynamics_and_Control_I .
+
+ex:paper_Roots_of_Urban_Transportation_Planning a s2a:ResearchPaper ;
+    s2a:paperTitle "Roots of Urban Transportation Planning"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-4614-5407-6_3>,
+        <https://doi.org/10.1007/978-3-319-93975-1_3> ;
+    s2a:paperVenue "Urban Transportation Planning in the United States"^^xsd:string ;
+    s2a:paperYear 2012,
+        2016 ;
+    s2a:relatedToCourse ex:course_Urban_Transportation_Planning .
+
+ex:paper_SCALING__Transport_Processes a s2a:ResearchPaper ;
+    s2a:paperTitle "SCALING | Transport Processes"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/b0-12-348530-4/00570-1> ;
+    s2a:paperVenue "Encyclopedia of Soils in the Environment"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_Transport_Processes_in_the_Environment .
+
+ex:paper_Schedule_Robustness a s2a:ResearchPaper ;
+    s2a:paperTitle "Schedule Robustness"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9781119275909.ch21> ;
+    s2a:paperVenue "Airline Network Planning and Scheduling"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Airline_Schedule_Planning .
+
+ex:paper_Seepage a s2a:ResearchPaper ;
+    s2a:paperTitle "Seepage"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b15955-8> ;
+    s2a:paperVenue "Advanced Soil Mechanics"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Advanced_Soil_Mechanics .
+
+ex:paper_Selecting_Solution_Procedures_for_NonlinearStructural_Dynamics a s2a:ResearchPaper ;
+    s2a:paperTitle "Selecting Solution Procedures for NonlinearStructural Dynamics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1177/058310247500700402> ;
+    s2a:paperVenue "The Shock and Vibration Digest"^^xsd:string ;
+    s2a:paperYear 1975 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Vibration_13013J .
+
+ex:paper_Sensorbased_motion_control_of_autonomous_underwater_vehicles_part_II_robust_motion_control_strategies a s2a:ResearchPaper ;
+    s2a:paperTitle "Sensor-based motion control of autonomous underwater vehicles part II: robust motion control strategies"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1049/sbra525e_ch3> ;
+    s2a:paperVenue "Autonomous Underwater Vehicles: Design and practice"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Motion_Based_Design .
+
+ex:paper_Simplified_Design_Approach_of_Steel_Fiber_Reinforced_Concrete_Under_Flexural_Load a s2a:ResearchPaper ;
+    s2a:paperTitle "Simplified Design Approach of Steel Fiber Reinforced Concrete Under Flexural Load"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.21012/fc10.234838> ;
+    s2a:paperVenue "Proceedings of the 10th International Conference on Fracture Mechanics of Concrete and Concrete Structures"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Mechanics_and_Design_of_Concrete_Structures .
+
+ex:paper_Simulationbased_policy_analysis_The_case_of_urban_speed_limits a s2a:ResearchPaper ;
+    s2a:paperTitle "Simulation-based policy analysis: The case of urban speed limits"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.tra.2023.103754> ;
+    s2a:paperVenue "Transportation Research Part A: Policy and Practice"^^xsd:string ;
+    s2a:paperYear 2023 ;
+    s2a:relatedToCourse ex:course_Transportation_Policy_and_Environmental_Limits .
+
+ex:paper_Society_for_Economic_Dynamics_and_Control a s2a:ResearchPaper ;
+    s2a:paperTitle "Society for Economic Dynamics and Control"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/s0165-1889(06)80014-x> ;
+    s2a:paperVenue "Journal of Economic Dynamics and Control"^^xsd:string ;
+    s2a:paperYear 1993 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Control_I .
+
+ex:paper_Society_for_economic_dynamics_and_control a s2a:ResearchPaper ;
+    s2a:paperTitle "Society for economic dynamics and control"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0165-1889(91)90045-3> ;
+    s2a:paperVenue "Journal of Economic Dynamics and Control"^^xsd:string ;
+    s2a:paperYear 1991 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Control_I .
+
+ex:paper_Soil_Behavior_at_the_Microscale_Particle_Forces a s2a:ResearchPaper ;
+    s2a:paperTitle "Soil Behavior at the Microscale: Particle Forces"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/40659(2003)2> ;
+    s2a:paperVenue "Soil Behavior and Soft Ground Construction"^^xsd:string ;
+    s2a:paperYear 2003 ;
+    s2a:relatedToCourse ex:course_Soil_Behavior .
+
+ex:paper_Soil_aggregate_plasticity_and_classification a s2a:ResearchPaper ;
+    s2a:paperTitle "Soil aggregate plasticity and classification"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b15955-3> ;
+    s2a:paperVenue "Advanced Soil Mechanics"^^xsd:string ;
+    s2a:paperYear 2013 ;
+    s2a:relatedToCourse ex:course_Advanced_Soil_Mechanics .
+
+ex:paper_Solid_Mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Solid Mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-94-015-8026-7> ;
+    s2a:paperVenue "Solid Mechanics and Its Applications"^^xsd:string ;
+    s2a:paperYear 1992 ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics .
+
+ex:paper_Solid_mechanics_at_finite_strains a s2a:ResearchPaper ;
+    s2a:paperTitle "Solid mechanics at finite strains"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/cbo9781139178938.005> ;
+    s2a:paperVenue "Nonlinear Solid Mechanics"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Solid_Mechanics .
+
+ex:paper_Some_Special_Features_of_Soil_Behavior a s2a:ResearchPaper ;
+    s2a:paperTitle "Some Special Features of Soil Behavior"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9781119832348.ch11> ;
+    s2a:paperVenue "Fundamentals of Soil Behavior"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Soil_Behavior .
+
+ex:paper_Spatial_Behavior_in_Transportation_Modeling_and_Planning a s2a:ResearchPaper ;
+    s2a:paperTitle "Spatial Behavior in Transportation Modeling and Planning"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420042283-8> ;
+    s2a:paperVenue "Transportation Systems Planning"^^xsd:string ;
+    s2a:paperYear 2002 ;
+    s2a:relatedToCourse ex:course_Logistical_and_Transportation_Planning_Methods .
+
+ex:paper_Spectral_analysis_of_nonsingular_matrices a s2a:ResearchPaper ;
+    s2a:paperTitle "Spectral analysis of nonsingular λ-matrices"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/bfb0042019> ;
+    s2a:paperVenue "Lecture Notes in Control and Information Sciences"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Structural_Analysis_and_Control .
+
+ex:paper_Standardisation_of_maglev_transportation_systems_in_Russia a s2a:ResearchPaper ;
+    s2a:paperTitle "Standardisation of maglev transportation systems in Russia"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.17816/transsyst20184432-43> ;
+    s2a:paperVenue "Transportation Systems and Technology"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Transportation_Systems .
+
+ex:paper_Strategic_supply_chain_management_Creating_shareholder_value_by_aligning_supply_chain_strategy_with_business_strategy a s2a:ResearchPaper ;
+    s2a:paperTitle "Strategic supply chain management Creating shareholder value by aligning supply chain strategy with business strategy"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4324/9781315242262-10> ;
+    s2a:paperVenue "Strategic Supply Chain Alignment"^^xsd:string ;
+    s2a:paperYear 2017 ;
+    s2a:relatedToCourse ex:course_Strategic_Management_in_the_Design_and_Construction_Value_Chain .
+
+ex:paper_Strategic_value_networks a s2a:ResearchPaper ;
+    s2a:paperTitle "Strategic value networks"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4324/9781315242262-17> ;
+    s2a:paperVenue "Strategic Supply Chain Alignment"^^xsd:string ;
+    s2a:paperYear 2017 ;
+    s2a:relatedToCourse ex:course_Strategic_Management_in_the_Design_and_Construction_Value_Chain .
+
+ex:paper_Strategies_for_Water_and_Wastewater_Treatment a s2a:ResearchPaper ;
+    s2a:paperTitle "Strategies for Water and Wastewater Treatment"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/9781108115896.010> ;
+    s2a:paperVenue "Water and Wastewater Engineering"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Water_and_Wastewater_Treatment_Engineering .
+
+ex:paper_Structural_Fire_Engineering_Design a s2a:ResearchPaper ;
+    s2a:paperTitle "Structural Fire Engineering Design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1680/978-1-83549-560-520241010> ;
+    s2a:paperVenue "Structural Design of Buildings: Holistic Design"^^xsd:string ;
+    s2a:paperYear 2024 ;
+    s2a:relatedToCourse ex:course_Structural_Engineering_Design .
+
+ex:paper_Structural_analysis a s2a:ResearchPaper ;
+    s2a:paperTitle "Structural analysis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-540-35653-0_5> ;
+    s2a:paperVenue "Diagnosis and Fault-Tolerant Control"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Structural_Analysis_and_Control .
+
+ex:paper_Structural_decomposition_theories_and_applications_in_multivariable_control_systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Structural decomposition theories and applications in multivariable control systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/bfb0042022> ;
+    s2a:paperVenue "Lecture Notes in Control and Information Sciences"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Structural_Analysis_and_Control .
+
+ex:paper_Structural_fire_engineering_design a s2a:ResearchPaper ;
+    s2a:paperTitle "Structural fire engineering design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1680/sfe.41417.039> ;
+    s2a:paperVenue "Structural Fire Engineering"^^xsd:string ;
+    s2a:paperYear 2011 ;
+    s2a:relatedToCourse ex:course_Structural_Engineering_Design .
+
+ex:paper_Structural_mechanics a s2a:ResearchPaper ;
+    s2a:paperTitle "Structural mechanics"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0013-7944(79)90085-7> ;
+    s2a:paperVenue "Engineering Fracture Mechanics"^^xsd:string ;
+    s2a:paperYear 1979 ;
+    s2a:relatedToCourse ex:course_Engineering_Mechanics_I .
+
+ex:paper_Structural_reliability_and_structural_design a s2a:ResearchPaper ;
+    s2a:paperTitle "Structural reliability and structural design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781482267457-13> ;
+    s2a:paperVenue "Probabilistic Methods in Structural Engineering"^^xsd:string ;
+    s2a:paperYear 1984 ;
+    s2a:relatedToCourse ex:course_Structural_Engineering_Design .
+
+ex:paper_Structuring_Strategic_Design_Management_Michael_Porters_Value_Chain a s2a:ResearchPaper ;
+    s2a:paperTitle "Structuring Strategic Design Management: Michael Porter's Value Chain"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1111/j.1948-7169.1998.tb00201.x> ;
+    s2a:paperVenue "Design Management Journal (Former Series)"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Strategic_Management_in_the_Design_and_Construction_Value_Chain .
+
+ex:paper_Strut_efficiency_factors_in_design_of_reinforced_concrete_deep_beams a s2a:ResearchPaper ;
+    s2a:paperTitle "Strut efficiency factors in design of reinforced concrete deep beams"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.21012/fc10.235531> ;
+    s2a:paperVenue "Proceedings of the 10th International Conference on Fracture Mechanics of Concrete and Concrete Structures"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Mechanics_and_Design_of_Concrete_Structures .
+
+ex:paper_Survey_of_Literature_on_CostBenefit_Analysis_for_Industrial_Project_Evaluation a s2a:ResearchPaper ;
+    s2a:paperTitle "Survey of Literature on Cost-Benefit Analysis for Industrial Project Evaluation"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-349-01653-2_2> ;
+    s2a:paperVenue "Project Evaluation"^^xsd:string ;
+    s2a:paperYear 1972 ;
+    s2a:relatedToCourse ex:course_Project_Evaluation .
+
+ex:paper_Sustainability_by_design a s2a:ResearchPaper ;
+    s2a:paperTitle "Sustainability by design"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4324/9781351065665-3> ;
+    s2a:paperVenue "Holistic Sustainability Through Craft-Design Collaboration"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Design_for_Sustainability .
+
+ex:paper_Sustainability_in_Materials a s2a:ResearchPaper ;
+    s2a:paperTitle "Sustainability in Materials"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780429275111-12> ;
+    s2a:paperVenue "Civil Engineering Materials"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Civil_Engineering_Materials_Laboratory .
+
+ex:paper_Sustainable_Urban_Logistics_Plan__current_situation_of_the_city_of_Pozna a s2a:ResearchPaper ;
+    s2a:paperTitle "Sustainable Urban Logistics Plan – current situation of the city of Poznań"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.trpro.2019.06.006> ;
+    s2a:paperVenue "Transportation Research Procedia"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_A_Sustainable_Transportation_Plan_for_MIT .
+
+ex:paper_Symbolic_Algebra_Approach_to_Composite_Materials_Analysis a s2a:ResearchPaper ;
+    s2a:paperTitle "Symbolic Algebra Approach to Composite Materials Analysis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-642-84792-9_19> ;
+    s2a:paperVenue "Local Mechanics Concepts for Composite Material Systems"^^xsd:string ;
+    s2a:paperYear 1992 ;
+    s2a:relatedToCourse ex:course_Mechanics_of_Material_Systems_An_Energy_Approach .
+
+ex:paper_System_dynamics_II_feedback a s2a:ResearchPaper ;
+    s2a:paperTitle "System dynamics II: feedback"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4324/9780203109557-18> ;
+    s2a:paperVenue "Understanding Human Ecology"^^xsd:string ;
+    s2a:paperYear 2014 ;
+    s2a:relatedToCourse ex:course_Ecology_II_Engineering_for_Sustainability .
+
+ex:paper_THE_LAWS_OF_SOIL_COLLOIDAL_BEHAVIOR a s2a:ResearchPaper ;
+    s2a:paperTitle "THE LAWS OF SOIL COLLOIDAL BEHAVIOR"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1097/00010694-193111000-00002> ;
+    s2a:paperVenue "Soil Science"^^xsd:string ;
+    s2a:paperYear 1931 ;
+    s2a:relatedToCourse ex:course_Soil_Behavior .
+
+ex:paper_Teaching_Design_for_Sustainability_from_Product_Design_to_Design_for_Sustainability_Transitions a s2a:ResearchPaper ;
+    s2a:paperTitle "Teaching Design for Sustainability from Product Design to Design for Sustainability Transitions"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4324/9781003365433-46> ;
+    s2a:paperVenue "Routledge Handbook of Sustainable Design"^^xsd:string ;
+    s2a:paperYear 2024 ;
+    s2a:relatedToCourse ex:course_Design_for_Sustainability .
+
+ex:paper_Techniques_in_Active_Dynamic_Structural_Control_to_Optimize_Structural_Controllers_and_Structural_Parameters a s2a:ResearchPaper ;
+    s2a:paperTitle "Techniques in Active Dynamic Structural Control to Optimize Structural Controllers and Structural Parameters"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781003580737-2> ;
+    s2a:paperVenue "Structural Dynamic Systems Computational Techniques and Optimization"^^xsd:string ;
+    s2a:paperYear 2024 ;
+    s2a:relatedToCourse ex:course_Structural_Analysis_and_Control .
+
+ex:paper_The_Demand_for_Transportation a s2a:ResearchPaper ;
+    s2a:paperTitle "The Demand for Transportation"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1142/9789814656177_0002> ;
+    s2a:paperVenue "Concepts of Transportation Economics"^^xsd:string ;
+    s2a:paperYear 2015 ;
+    s2a:relatedToCourse ex:course_Transportation_Systems_Analysis_Demand_and_Economics .
+
+ex:paper_The_Internet_An_Information_Resource_for_Real_Estate_Practice a s2a:ResearchPaper ;
+    s2a:paperTitle "The Internet: An Information Resource for Real Estate Practice"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.15396/eres1995_145> ;
+    s2a:paperVenue "Proceedings of the Real Estate Society Conference - Stockholm Sweden"^^xsd:string ;
+    s2a:paperYear 1995 ;
+    s2a:relatedToCourse ex:course_ECommerce_and_the_Internet_in_Real_Estate_and_Construction .
+
+ex:paper_The_Proton_H_in_Aquatic_Chemistry a s2a:ResearchPaper ;
+    s2a:paperTitle "The Proton (H+) in Aquatic Chemistry"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9780429198861-3> ;
+    s2a:paperVenue "Aquatic Chemistry Concepts"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Aquatic_Chemistry .
+
+ex:paper_The_Rise_of_Big_Data_on_Cloud_Computing a s2a:ResearchPaper ;
+    s2a:paperTitle "The Rise of Big Data on Cloud Computing"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781003032328-3> ;
+    s2a:paperVenue "Big Data Analysis for Green Computing"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Computing_and_Data_Analysis_for_Environmental_Applications .
+
+ex:paper_The_Schedule_Adjustment_Problem a s2a:ResearchPaper ;
+    s2a:paperTitle "The Schedule Adjustment Problem"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9781119275909.ch14> ;
+    s2a:paperVenue "Airline Network Planning and Scheduling"^^xsd:string ;
+    s2a:paperYear 2018 ;
+    s2a:relatedToCourse ex:course_Airline_Schedule_Planning .
+
+ex:paper_The_Strategic_Importance_of_Food_Land_and_Water a s2a:ResearchPaper ;
+    s2a:paperTitle "The Strategic Importance of Food Land and Water"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/9781108690126.003> ;
+    s2a:paperVenue "10.1017/9781108690126.003"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Land_Water_Food_and_Climate .
+
+ex:paper_The_Value_Chain a s2a:ResearchPaper ;
+    s2a:paperTitle "The Value Chain"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4135/9781446216446.n12> ;
+    s2a:paperVenue "Strategic Management"^^xsd:string ;
+    s2a:paperYear 2008 ;
+    s2a:relatedToCourse ex:course_Strategic_Management_in_the_Design_and_Construction_Value_Chain .
+
+ex:paper_The_Why_and_How_of_Machines a s2a:ResearchPaper ;
+    s2a:paperTitle "The Why and How of Machines"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/9789048550463.002>,
+        <https://doi.org/10.2307/j.ctvqsf379.5>,
+        <https://doi.org/10.5117/9789463724623_ch01> ;
+    s2a:paperVenue "Inventing Cinema"^^xsd:string ;
+    s2a:paperYear 2019,
+        2025 ;
+    s2a:relatedToCourse ex:course_How_and_Why_Machines_Work .
+
+ex:paper_The_accuracy_in_estimating_truck_class_rates_for_logistical_planning a s2a:ResearchPaper ;
+    s2a:paperTitle "The accuracy in estimating truck class rates for logistical planning"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0191-2607(91)90011-e> ;
+    s2a:paperVenue "Transportation Research Part A: General"^^xsd:string ;
+    s2a:paperYear 1991 ;
+    s2a:relatedToCourse ex:course_Logistical_and_Transportation_Planning_Methods .
+
+ex:paper_The_acidity_of_water a s2a:ResearchPaper ;
+    s2a:paperTitle "The acidity of water"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1093/hesc/9780198502838.003.0003> ;
+    s2a:paperVenue "Aquatic Environmental Chemistry"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Aquatic_Chemistry .
+
+ex:paper_The_aquatic_environment a s2a:ResearchPaper ;
+    s2a:paperTitle "The aquatic environment"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1093/hesc/9780198502838.003.0002> ;
+    s2a:paperVenue "Aquatic Environmental Chemistry"^^xsd:string ;
+    s2a:paperYear 1998 ;
+    s2a:relatedToCourse ex:course_Aquatic_Chemistry .
+
+ex:paper_The_global_governance_of_climate_change_forests_water_and_food_normative_challenges a s2a:ResearchPaper ;
+    s2a:paperTitle "The global governance of climate change forests water and food: normative challenges"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3920/9789086867530_0004> ;
+    s2a:paperVenue "10.3920/9789086867530_0004"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Land_Water_Food_and_Climate .
+
+ex:paper_Thermal_Effects_on_Soil_Behavior a s2a:ResearchPaper ;
+    s2a:paperTitle "Thermal Effects on Soil Behavior"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1002/9781119832348.ch12> ;
+    s2a:paperVenue "Fundamentals of Soil Behavior"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Soil_Behavior .
+
+ex:paper_Time_concepts_in_realtime_software a s2a:ResearchPaper ;
+    s2a:paperTitle "Time concepts in real-time software"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/0967-0661(93)92099-p>,
+        <https://doi.org/10.1016/0967-0661(93)92120-s> ;
+    s2a:paperVenue "Control Engineering Practice"^^xsd:string ;
+    s2a:paperYear 1993 ;
+    s2a:relatedToCourse ex:course_Masters_of_Engineering_Concepts_of_Engineering_Practice .
+
+ex:paper_Traffic_safety_Speed_limits_strict_liability_and_a_km_tax a s2a:ResearchPaper ;
+    s2a:paperTitle "Traffic safety: Speed limits strict liability and a km tax"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/j.tra.2005.06.003> ;
+    s2a:paperVenue "Transportation Research Part A: Policy and Practice"^^xsd:string ;
+    s2a:paperYear 2006 ;
+    s2a:relatedToCourse ex:course_Transportation_Policy_and_Environmental_Limits .
+
+ex:paper_Transport_and_Fate_of_Chemicals_in_the_Environment_Introduction a s2a:ResearchPaper ;
+    s2a:paperTitle "Transport and Fate of Chemicals in the Environment Introduction"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-4614-5731-2_1> ;
+    s2a:paperVenue "Transport and Fate of Chemicals in the Environment"^^xsd:string ;
+    s2a:paperYear 2012 ;
+    s2a:relatedToCourse ex:course_Chemicals_in_the_Environment_Fate_and_Transport .
+
+ex:paper_Transport_and_Fate_of_Chemicals_in_the_Environment_Introduction_and_Roadmap a s2a:ResearchPaper ;
+    s2a:paperTitle "Transport and Fate of Chemicals in the Environment (Introduction and Roadmap)"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/springerreference_308759> ;
+    s2a:paperVenue "SpringerReference"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Chemicals_in_the_Environment_Fate_and_Transport .
+
+ex:paper_Transportation_Demand_Analysis a s2a:ResearchPaper ;
+    s2a:paperTitle "Transportation Demand Analysis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-1-4615-4076-2_2> ;
+    s2a:paperVenue "Transportation Systems and Service Policy"^^xsd:string ;
+    s2a:paperYear 1996 ;
+    s2a:relatedToCourse ex:course_Transportation_Systems_Analysis_Demand_and_Economics .
+
+ex:paper_Transportation_Planning_Recent_Trends_in_Urban_Transportation_236_Paying_for_Transportation_240_Transportation_Planning_and_Land a s2a:ResearchPaper ;
+    s2a:paperTitle "Transportation Planning Recent Trends in Urban Transportation 236 Paying for Transportation 240 Transportation Planning and Land"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.4324/9781315664453-17> ;
+    s2a:paperVenue "Contemporary Urban Planning"^^xsd:string ;
+    s2a:paperYear 2015 ;
+    s2a:relatedToCourse ex:course_Urban_Transportation_Planning .
+
+ex:paper_Transportation_Systems_Planning a s2a:ResearchPaper ;
+    s2a:paperTitle "Transportation Systems Planning"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420042283-6> ;
+    s2a:paperVenue "Transportation Systems Planning"^^xsd:string ;
+    s2a:paperYear 2002 ;
+    s2a:relatedToCourse ex:course_Logistical_and_Transportation_Planning_Methods,
+        ex:course_Transportation_Systems .
+
+ex:paper_Treatment_of_Grey_Water_Using_Natural_Zeolites a s2a:ResearchPaper ;
+    s2a:paperTitle "Treatment of Grey Water Using Natural Zeolites"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.35940/ijeat.a1008.1091s19> ;
+    s2a:paperVenue "International Journal of Engineering and Advanced Technology"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Masters_of_Engineering_Project .
+
+ex:paper_Turin_Automatic_Metro_Line_Effects_on_Real_Estate_Market_and_on_Commerce a s2a:ResearchPaper ;
+    s2a:paperTitle "Turin Automatic Metro Line: Effects on Real Estate Market and on Commerce"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.15396/eres2005_206> ;
+    s2a:paperVenue "Book of Abstracts: 2005 European Real Estate Society conference in association with the International Real Estate Society - Dublin Ireland"^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_ECommerce_and_the_Internet_in_Real_Estate_and_Construction .
+
+ex:paper_Uncertainty_Analysis_of_Engineering_Systems a s2a:ResearchPaper ;
+    s2a:paperTitle "Uncertainty Analysis of Engineering Systems"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781032700373-5> ;
+    s2a:paperVenue "Risk and Uncertainty for Civil Engineering"^^xsd:string ;
+    s2a:paperYear 2025 ;
+    s2a:relatedToCourse ex:course_Uncertainty_in_Engineering .
+
+ex:paper_Uncertainty_Measures a s2a:ResearchPaper ;
+    s2a:paperTitle "Uncertainty Measures"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420011456-8> ;
+    s2a:paperVenue "Uncertainty Modeling and Analysis in Engineering and the Sciences"^^xsd:string ;
+    s2a:paperYear 2006 ;
+    s2a:relatedToCourse ex:course_Uncertainty_in_Engineering .
+
+ex:paper_Uncertainty_in_Measurement a s2a:ResearchPaper ;
+    s2a:paperTitle "Uncertainty in Measurement"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-0-387-46328-5_1> ;
+    s2a:paperVenue "Springer Series in Reliability Engineering"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Uncertainty_in_Engineering .
+
+ex:paper_Urban_Public_Transportation_Systems_in_Ghana a s2a:ResearchPaper ;
+    s2a:paperTitle "Urban Public Transportation Systems in Ghana"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/40717(148)1> ;
+    s2a:paperVenue "Urban Public Transportation System"^^xsd:string ;
+    s2a:paperYear 2004 ;
+    s2a:relatedToCourse ex:course_Public_Transportation_Systems .
+
+ex:paper_Utility_maximisation_demand_systems_and_functional_form_in_transport_demand_analysis a s2a:ResearchPaper ;
+    s2a:paperTitle "Utility maximisation demand systems and functional form in transport demand analysis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1080/03081067908717168> ;
+    s2a:paperVenue "Transportation Planning and Technology"^^xsd:string ;
+    s2a:paperYear 1979 ;
+    s2a:relatedToCourse ex:course_Transportation_Systems_Analysis_Demand_and_Economics .
+
+ex:paper_Vehicle_Dynamics_Control a s2a:ResearchPaper ;
+    s2a:paperTitle "Vehicle Dynamics Control"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/b13767-14> ;
+    s2a:paperVenue "Vehicle Dynamics Stability and Control"^^xsd:string ;
+    s2a:paperYear 2016 ;
+    s2a:relatedToCourse ex:course_Dynamics_and_Control_I .
+
+ex:paper_Vehicle_Dynamics_Modeling a s2a:ResearchPaper ;
+    s2a:paperTitle "Vehicle Dynamics Modeling"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-642-39440-9_4> ;
+    s2a:paperVenue "Automotive Control"^^xsd:string ;
+    s2a:paperYear 2021 ;
+    s2a:relatedToCourse ex:course_Modeling_Dynamics_and_Control_I .
+
+ex:paper_Vernacular_Modernism a s2a:ResearchPaper ;
+    s2a:paperTitle "Vernacular Modernism"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1515/9781503625204> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_The_Impact_of_Globalization_on_the_Built_Environment .
+
+ex:paper_Video_for_Design_of_a_ReverseElectrowetting_Transducer_Based_Wireless_SelfPowered_Motion_Sensor a s2a:ResearchPaper ;
+    s2a:paperTitle "Video for Design of a Reverse-Electrowetting Transducer Based Wireless Self-Powered Motion Sensor"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1109/iscas45731.2020.9180973/video> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Motion_Based_Design .
+
+ex:paper_Views a s2a:ResearchPaper ;
+    s2a:paperTitle "Views"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/0-387-23568-x_6> ;
+    s2a:paperVenue "Web Information Systems Engineering and Internet Technologies Book Series"^^xsd:string ;
+    s2a:relatedToCourse ex:course_Database_Internet_and_Systems_Integration_Technologies .
+
+ex:paper_Visualization_of_Uncertainty a s2a:ResearchPaper ;
+    s2a:paperTitle "Visualization of Uncertainty"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1201/9781420011456-12> ;
+    s2a:paperVenue "Uncertainty Modeling and Analysis in Engineering and the Sciences"^^xsd:string ;
+    s2a:paperYear 2006 ;
+    s2a:relatedToCourse ex:course_Uncertainty_in_Engineering .
+
+ex:paper_WITHDRAWN_Engineering_Fracture_Mechanics_Special_IssueMechanics_of_Fracture_and_Failure_in_Geomaterials a s2a:ResearchPaper ;
+    s2a:paperTitle "WITHDRAWN: Engineering Fracture Mechanics Special Issue—Mechanics of Fracture and Failure in Geomaterials"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1016/s0013-7944(02)00060-7> ;
+    s2a:paperVenue "Engineering Fracture Mechanics"^^xsd:string ;
+    s2a:paperYear 2002 ;
+    s2a:relatedToCourse ex:course_Engineering_Mechanics_I .
+
+ex:paper_Walking_System_Problems_Analysis_and_Plan_Conception_in_Chongqing_City a s2a:ResearchPaper ;
+    s2a:paperTitle "Walking System Problems Analysis and Plan Conception in Chongqing City"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/9780784413364.019> ;
+    s2a:paperVenue "Challenges and Advances in Sustainable Transportation Systems"^^xsd:string ;
+    s2a:paperYear 2014 ;
+    s2a:relatedToCourse ex:course_A_Sustainable_Transportation_Plan_for_MIT .
+
+ex:paper_Waste_Containment_and_Remediation a s2a:ResearchPaper ;
+    s2a:paperTitle "Waste Containment and Remediation"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1061/9780784407899> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2005 ;
+    s2a:relatedToCourse ex:course_Waste_Containment_and_Remediation_Technology .
+
+ex:paper_Water_Climate_Food_Nexus_for_Green_Sustainability a s2a:ResearchPaper ;
+    s2a:paperTitle "Water Climate Food Nexus for Green Sustainability"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-030-41629-4_23> ;
+    s2a:paperVenue "10.1007/978-3-030-41629-4_23"^^xsd:string ;
+    s2a:paperYear 2020 ;
+    s2a:relatedToCourse ex:course_Land_Water_Food_and_Climate .
+
+ex:paper_Water_Resource_Systems_Modeling_Its_Role_in_Planning_and_Management a s2a:ResearchPaper ;
+    s2a:paperTitle "Water Resource Systems Modeling: Its Role in Planning and Management"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-319-44234-1_2> ;
+    s2a:paperVenue "Water Resource Systems Planning and Management"^^xsd:string ;
+    s2a:paperYear 2017 ;
+    s2a:relatedToCourse ex:course_Water_Resource_Systems .
+
+ex:paper_Water_and_Wastewater_Treatment_Processes a s2a:ResearchPaper ;
+    s2a:paperTitle "Water and Wastewater Treatment Processes"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1017/9781108115896.007> ;
+    s2a:paperVenue "Water and Wastewater Engineering"^^xsd:string ;
+    s2a:paperYear 2019 ;
+    s2a:relatedToCourse ex:course_Water_and_Wastewater_Treatment_Engineering .
+
+ex:paper_Water_quality_Guide_to_analytical_quality_control_for_water_analysis a s2a:ResearchPaper ;
+    s2a:paperTitle "Water quality. Guide to analytical quality control for water analysis"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3403/01577664> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Water_Quality_Control .
+
+ex:paper_Water_quality_Sampling a s2a:ResearchPaper ;
+    s2a:paperTitle "Water quality. Sampling"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.3403/30260858> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:relatedToCourse ex:course_Water_Quality_Control .
+
+ex:paper_Whole_Life_Costs_and_Project_Procurement_in_Port_Coastal_and_Fluvial_Engineering a s2a:ResearchPaper ;
+    s2a:paperTitle "Whole Life Costs and Project Procurement in Port Coastal and Fluvial Engineering"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1680/wlcappipcafehtetcb.32323> ;
+    s2a:paperVenue " "^^xsd:string ;
+    s2a:paperYear 2003 ;
+    s2a:relatedToCourse ex:course_Environmental_Engineering_Masters_of_Engineering_Project .
+
+ex:paper_advanced a s2a:ResearchPaper ;
+    s2a:paperTitle "advanced"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1007/978-3-642-41714-6_10661> ;
+    s2a:paperVenue "Dictionary Geotechnical Engineering/Wörterbuch GeoTechnik"^^xsd:string ;
+    s2a:paperYear 2014 ;
+    s2a:relatedToCourse ex:course_Advanced_Geotechnical_Engineering .
+
+ex:paper_nan a s2a:ResearchPaper ;
+    s2a:paperTitle "nan"^^xsd:string ;
+    s2a:paperURL <https://doi.org/10.1111/emi.2002.4.issue-7>,
+        <https://doi.org/10.1111/emi.2012.14.issue-7>,
+        <https://doi.org/10.1111/emi.2015.17.issue-2>,
+        <https://doi.org/10.1111/emi.v22.9>,
+        <https://doi.org/10.1111/emi.v25.11>,
+        <https://doi.org/10.5917/jagh1987.33.134>,
+        <https://doi.org/10.5917/jagh1987.38.e1> ;
+    s2a:paperVenue "Environmental Microbiology"^^xsd:string,
+        "Journal of Groundwater Hydrology"^^xsd:string ;
+    s2a:paperYear 1991,
+        1996,
+        2002,
+        2012,
+        2015,
+        2020,
+        2023 ;
+    s2a:relatedToCourse ex:course_Environmental_Microbiology,
+        ex:course_Groundwater_Hydrology .
+
