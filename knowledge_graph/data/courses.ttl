@@ -1,0 +1,409 @@
+@prefix ex: <http://s2a.org/resource/> .
+@prefix s2a: <http://s2a.org/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:course_A_Sustainable_Transportation_Plan_for_MIT a s2a:Course ;
+    s2a:courseDept "1.963"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "A Sustainable Transportation Plan for MIT"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-963-a-sustainable-transportation-plan-for-mit-spring-2007/> .
+
+ex:course_Advanced_Fluid_Dynamics_of_the_Environment a s2a:Course ;
+    s2a:courseDept "1.63"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Advanced Fluid Dynamics of the Environment"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-63-advanced-fluid-dynamics-of-the-environment-fall-2002/> .
+
+ex:course_Advanced_Geotechnical_Engineering a s2a:Course ;
+    s2a:courseDept "1.364"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Advanced Geotechnical Engineering"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-364-advanced-geotechnical-engineering-fall-2003/> .
+
+ex:course_Advanced_Soil_Mechanics a s2a:Course ;
+    s2a:courseDept "1.361"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Advanced Soil Mechanics"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-361-advanced-soil-mechanics-fall-2004/> .
+
+ex:course_Airline_Schedule_Planning a s2a:Course ;
+    s2a:courseDept "1.206"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Airline Schedule Planning"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-206j-airline-schedule-planning-spring-2003/> .
+
+ex:course_An_Introduction_to_Intelligent_Transportation_Systems a s2a:Course ;
+    s2a:courseDept "1.212"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "An Introduction to Intelligent Transportation Systems"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-212j-an-introduction-to-intelligent-transportation-systems-spring-2005/> .
+
+ex:course_Aquatic_Chemistry a s2a:Course ;
+    s2a:courseDept "1.76"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Aquatic Chemistry"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-76-aquatic-chemistry-fall-2005/> .
+
+ex:course_Atmospheric_Chemistry a s2a:Course ;
+    s2a:courseDept "1.84"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Atmospheric Chemistry"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-84j-atmospheric-chemistry-fall-2013/> .
+
+ex:course_Carrier_Systems a s2a:Course ;
+    s2a:courseDept "1.224"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Carrier Systems"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-224j-carrier-systems-fall-2003/> .
+
+ex:course_Chemicals_in_the_Environment_Fate_and_Transport a s2a:Course ;
+    s2a:courseDept "1.725"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Chemicals in the Environment: Fate and Transport"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-725j-chemicals-in-the-environment-fate-and-transport-fall-2004/> .
+
+ex:course_Civil_Engineering_Materials_Laboratory a s2a:Course ;
+    s2a:courseDept "1.103"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Civil Engineering Materials Laboratory"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-103-civil-engineering-materials-laboratory-spring-2004/> .
+
+ex:course_Computer_Algorithms_in_Systems_Engineering a s2a:Course ;
+    s2a:courseDept "1.204"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Computer Algorithms in Systems Engineering"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-204-computer-algorithms-in-systems-engineering-spring-2010/> .
+
+ex:course_Computing_and_Data_Analysis_for_Environmental_Applications a s2a:Course ;
+    s2a:courseDept "1.017"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Computing and Data Analysis for Environmental Applications"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-017-computing-and-data-analysis-for-environmental-applications-fall-2003/> .
+
+ex:course_Database_Internet_and_Systems_Integration_Technologies a s2a:Course ;
+    s2a:courseDept "1.264"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Database, Internet, and Systems Integration Technologies"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-264j-database-internet-and-systems-integration-technologies-fall-2013/> .
+
+ex:course_Design_for_Sustainability a s2a:Course ;
+    s2a:courseDept "1.964"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Design for Sustainability"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-964-design-for-sustainability-fall-2006/> .
+
+ex:course_Dynamics_and_Control_I a s2a:Course ;
+    s2a:courseDept "2.003"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Dynamics and Control I"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/2-003j-dynamics-and-control-i-spring-2007/> .
+
+ex:course_Dynamics_and_Vibration_13013J a s2a:Course ;
+    s2a:courseDept "2.003"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Dynamics and Vibration (13.013J)"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/2-003j-dynamics-and-vibration-13-013j-fall-2002/> .
+
+ex:course_ECommerce_and_the_Internet_in_Real_Estate_and_Construction a s2a:Course ;
+    s2a:courseDept "1.464"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "E-Commerce and the Internet in Real Estate and Construction"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-464-e-commerce-and-the-internet-in-real-estate-and-construction-spring-2004/> .
+
+ex:course_Ecology_II_Engineering_for_Sustainability a s2a:Course ;
+    s2a:courseDept "1.02"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Ecology II: Engineering for Sustainability"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-020-ecology-ii-engineering-for-sustainability-spring-2008/> .
+
+ex:course_Ecology_I_The_Earth_System a s2a:Course ;
+    s2a:courseDept "1.018"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Ecology I: The Earth System"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-018j-ecology-i-the-earth-system-fall-2009/> .
+
+ex:course_Engineering_Mechanics_I a s2a:Course ;
+    s2a:courseDept "1.05"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Engineering Mechanics I"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/> .
+
+ex:course_Engineering_Mechanics_II a s2a:Course ;
+    s2a:courseDept "1.06"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Engineering Mechanics II"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/> .
+
+ex:course_Environmental_Engineering_Applications_of_Geographic_Information_Systems a s2a:Course ;
+    s2a:courseDept "1.963"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Environmental Engineering Applications of Geographic Information Systems"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-963-environmental-engineering-applications-of-geographic-information-systems-fall-2004/> .
+
+ex:course_Environmental_Engineering_Masters_of_Engineering_Project a s2a:Course ;
+    s2a:courseDept "1.782"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Environmental Engineering Masters of Engineering Project"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-782-environmental-engineering-masters-of-engineering-project-fall-2003-spring-2004/>,
+        <https://ocw.mit.edu/courses/1-782-environmental-engineering-masters-of-engineering-project-fall-2007-spring-2008/> .
+
+ex:course_Environmental_Microbiology a s2a:Course ;
+    s2a:courseDept "1.89"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Environmental Microbiology"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-89-environmental-microbiology-fall-2004/> .
+
+ex:course_Foundations_of_Software_Engineering a s2a:Course ;
+    s2a:courseDept "1.124"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Foundations of Software Engineering"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-124j-foundations-of-software-engineering-fall-2000/> .
+
+ex:course_From_Nano_to_Macro_Introduction_to_Atomistic_Modeling_Techniques a s2a:Course ;
+    s2a:courseDept "1.978"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "From Nano to Macro: Introduction to Atomistic Modeling Techniques"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-978-from-nano-to-macro-introduction-to-atomistic-modeling-techniques-january-iap-2007/> .
+
+ex:course_Groundwater_Hydrology a s2a:Course ;
+    s2a:courseDept "1.72"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Groundwater Hydrology"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-72-groundwater-hydrology-fall-2005/> .
+
+ex:course_How_and_Why_Machines_Work a s2a:Course ;
+    s2a:courseDept "2.0"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "How and Why Machines Work"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/2-000-how-and-why-machines-work-spring-2002/> .
+
+ex:course_Introduction_to_Civil_Engineering_Design a s2a:Course ;
+    s2a:courseDept "1.012"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Introduction to Civil Engineering Design"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-012-introduction-to-civil-engineering-design-spring-2002/> .
+
+ex:course_Introduction_to_Civil_and_Environmental_Engineering_Design_I a s2a:Course ;
+    s2a:courseDept "1.101"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Introduction to Civil and Environmental Engineering Design I"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2005/>,
+        <https://ocw.mit.edu/courses/1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2006/> .
+
+ex:course_Introduction_to_Computers_and_Engineering_Problem_Solving a s2a:Course ;
+    s2a:courseDept "1.0"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Introduction to Computers and Engineering Problem Solving"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-00-introduction-to-computers-and-engineering-problem-solving-spring-2012/> .
+
+ex:course_Introduction_to_Network_Models a s2a:Course ;
+    s2a:courseDept "1.022"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Introduction to Network Models"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-022-introduction-to-network-models-fall-2018/> .
+
+ex:course_Introduction_to_Transportation_Systems a s2a:Course ;
+    s2a:courseDept "1.201"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Introduction to Transportation Systems"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-201j-introduction-to-transportation-systems-fall-2006/> .
+
+ex:course_Land_Water_Food_and_Climate a s2a:Course ;
+    s2a:courseDept "1.74"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Land, Water, Food, and Climate"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-74-land-water-food-and-climate-fall-2020/> .
+
+ex:course_Logistical_and_Transportation_Planning_Methods a s2a:Course ;
+    s2a:courseDept "1.203"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Logistical and Transportation Planning Methods"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-203j-logistical-and-transportation-planning-methods-fall-2006/> .
+
+ex:course_Masters_of_Engineering_Concepts_of_Engineering_Practice a s2a:Course ;
+    s2a:courseDept "1.133"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Masters of Engineering Concepts of Engineering Practice"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-133-masters-of-engineering-concepts-of-engineering-practice-fall-2007/> .
+
+ex:course_Mechanics__Materials_I a s2a:Course ;
+    s2a:courseDept "2.001"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Mechanics & Materials I"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/2-001-mechanics-materials-i-fall-2006/> .
+
+ex:course_Mechanics_and_Design_of_Concrete_Structures a s2a:Course ;
+    s2a:courseDept "1.054"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Mechanics and Design of Concrete Structures"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-054-mechanics-and-design-of-concrete-structures-spring-2004/> .
+
+ex:course_Mechanics_and_Materials_II a s2a:Course ;
+    s2a:courseDept "2.002"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Mechanics and Materials II"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/2-002-mechanics-and-materials-ii-spring-2004/> .
+
+ex:course_Mechanics_of_Material_Systems_An_Energy_Approach a s2a:Course ;
+    s2a:courseDept "1.033"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Mechanics of Material Systems: An Energy Approach"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-033-mechanics-of-material-systems-an-energy-approach-fall-2003/> .
+
+ex:course_Modeling_Dynamics_and_Control_I a s2a:Course ;
+    s2a:courseDept "2.003"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Modeling Dynamics and Control I"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/2-003-modeling-dynamics-and-control-i-spring-2005/> .
+
+ex:course_Motion_Based_Design a s2a:Course ;
+    s2a:courseDept "1.561"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Motion Based Design"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-561-motion-based-design-fall-2003/> .
+
+ex:course_Probability_and_Statistics_in_Engineering a s2a:Course ;
+    s2a:courseDept "1.151"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Probability and Statistics in Engineering"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-151-probability-and-statistics-in-engineering-spring-2005/> .
+
+ex:course_Project_Evaluation a s2a:Course ;
+    s2a:courseDept "1.011"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Project Evaluation"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-011-project-evaluation-spring-2011/> .
+
+ex:course_Project_Management a s2a:Course ;
+    s2a:courseDept "1.04"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Project Management"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-040-project-management-spring-2004/>,
+        <https://ocw.mit.edu/courses/1-040-project-management-spring-2009/> .
+
+ex:course_Public_Transportation_Systems a s2a:Course ;
+    s2a:courseDept "1.258"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Public Transportation Systems"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-258j-public-transportation-systems-spring-2017/> .
+
+ex:course_Soil_Behavior a s2a:Course ;
+    s2a:courseDept "1.322"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Soil Behavior"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-322-soil-behavior-spring-2005/> .
+
+ex:course_Solid_Mechanics a s2a:Course ;
+    s2a:courseDept "1.05"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Solid Mechanics"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-050-solid-mechanics-fall-2004/> .
+
+ex:course_Solid_Mechanics_Laboratory a s2a:Course ;
+    s2a:courseDept "1.105"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Solid Mechanics Laboratory"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-105-solid-mechanics-laboratory-fall-2003/> .
+
+ex:course_Strategic_Management_in_the_Design_and_Construction_Value_Chain a s2a:Course ;
+    s2a:courseDept "1.46"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Strategic Management in the Design and Construction Value Chain"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-46-strategic-management-in-the-design-and-construction-value-chain-fall-2003/> .
+
+ex:course_Structural_Analysis_and_Control a s2a:Course ;
+    s2a:courseDept "1.571"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Structural Analysis and Control"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-571-structural-analysis-and-control-spring-2004/> .
+
+ex:course_Structural_Engineering_Design a s2a:Course ;
+    s2a:courseDept "1.051"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Structural Engineering Design"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-051-structural-engineering-design-fall-2003/> .
+
+ex:course_The_Impact_of_Globalization_on_the_Built_Environment a s2a:Course ;
+    s2a:courseDept "1.463"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "The Impact of Globalization on the Built Environment"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-463j-the-impact-of-globalization-on-the-built-environment-fall-2009/> .
+
+ex:course_Transit_Management a s2a:Course ;
+    s2a:courseDept "1.259"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Transit Management"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-259j-transit-management-fall-2006/> .
+
+ex:course_Transport_Processes_in_the_Environment a s2a:Course ;
+    s2a:courseDept "1.061"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Transport Processes in the Environment"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-061-transport-processes-in-the-environment-fall-2008/> .
+
+ex:course_Transportation_Flow_Systems a s2a:Course ;
+    s2a:courseDept "1.225"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Transportation Flow Systems"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-225j-transportation-flow-systems-fall-2002/> .
+
+ex:course_Transportation_Policy_Strategy_and_Management a s2a:Course ;
+    s2a:courseDept "1.223"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Transportation Policy, Strategy, and Management"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-223j-transportation-policy-strategy-and-management-fall-2004/> .
+
+ex:course_Transportation_Policy_and_Environmental_Limits a s2a:Course ;
+    s2a:courseDept "1.253"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Transportation Policy and Environmental Limits"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-253j-transportation-policy-and-environmental-limits-spring-2004/> .
+
+ex:course_Transportation_Systems a s2a:Course ;
+    s2a:courseDept "1.221"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Transportation Systems"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-221j-transportation-systems-fall-2004/> .
+
+ex:course_Transportation_Systems_Analysis_Demand_and_Economics a s2a:Course ;
+    s2a:courseDept "1.201"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Transportation Systems Analysis: Demand and Economics"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-201j-transportation-systems-analysis-demand-and-economics-fall-2008/> .
+
+ex:course_Uncertainty_in_Engineering a s2a:Course ;
+    s2a:courseDept "1.01"^^xsd:string ;
+    s2a:courseLevel "Undergraduate"^^xsd:string ;
+    s2a:courseTitle "Uncertainty in Engineering"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-010-uncertainty-in-engineering-fall-2008/> .
+
+ex:course_Urban_Transportation_Planning a s2a:Course ;
+    s2a:courseDept "1.252"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Urban Transportation Planning"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-252j-urban-transportation-planning-fall-2016/> .
+
+ex:course_Waste_Containment_and_Remediation_Technology a s2a:Course ;
+    s2a:courseDept "1.34"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Waste Containment and Remediation Technology"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-34-waste-containment-and-remediation-technology-spring-2004/> .
+
+ex:course_Water_Quality_Control a s2a:Course ;
+    s2a:courseDept "1.77"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Water Quality Control"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-77-water-quality-control-spring-2006/> .
+
+ex:course_Water_Resource_Systems a s2a:Course ;
+    s2a:courseDept "1.731"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Water Resource Systems"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-731-water-resource-systems-fall-2006/> .
+
+ex:course_Water_and_Wastewater_Treatment_Engineering a s2a:Course ;
+    s2a:courseDept "1.85"^^xsd:string ;
+    s2a:courseLevel "Graduate"^^xsd:string ;
+    s2a:courseTitle "Water and Wastewater Treatment Engineering"^^xsd:string ;
+    s2a:courseURL <https://ocw.mit.edu/courses/1-85-water-and-wastewater-treatment-engineering-spring-2006/> .
+

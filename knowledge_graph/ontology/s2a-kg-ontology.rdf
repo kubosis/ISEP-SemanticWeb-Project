@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:h/"
+     xml:base="urn:absolute:h/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:s2a="http://example.org/s2a-kg-ontology#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.org/s2a-kg-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#ABOUT_TOPIC -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/s2a-kg-ontology#ABOUT_TOPIC">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/s2a-kg-ontology#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#HAS_KEYWORD -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/s2a-kg-ontology#HAS_KEYWORD">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Skill"/>
+        <rdfs:range rdf:resource="http://example.org/s2a-kg-ontology#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#HAS_TOPIC -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/s2a-kg-ontology#HAS_TOPIC">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:range rdf:resource="http://example.org/s2a-kg-ontology#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#MENTIONS -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/s2a-kg-ontology#MENTIONS">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/s2a-kg-ontology#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#RELATED_TO_COURSE -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/s2a-kg-ontology#RELATED_TO_COURSE">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Paper"/>
+        <rdfs:range rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#TEACHES_SKILL -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/s2a-kg-ontology#TEACHES_SKILL">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:range rdf:resource="http://example.org/s2a-kg-ontology#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#courseDept -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#courseDept">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#courseLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#courseLevel">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#courseProfessor -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#courseProfessor">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#courseTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#courseTitle">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#courseURL -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#courseURL">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#keywordname -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#keywordname">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Keyword"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#label -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#label">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#name">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Topic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#paperTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#paperTitle">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#paperURL -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#paperURL">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#rawTopics -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#rawTopics">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#uri -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#uri">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#venue -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#venue">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#year -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/s2a-kg-ontology#year">
+        <rdfs:domain rdf:resource="http://example.org/s2a-kg-ontology#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#Course -->
+
+    <owl:Class rdf:about="http://example.org/s2a-kg-ontology#Course"/>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#Keyword -->
+
+    <owl:Class rdf:about="http://example.org/s2a-kg-ontology#Keyword"/>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#Paper -->
+
+    <owl:Class rdf:about="http://example.org/s2a-kg-ontology#Paper"/>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#Skill -->
+
+    <owl:Class rdf:about="http://example.org/s2a-kg-ontology#Skill"/>
+    
+
+
+    <!-- http://example.org/s2a-kg-ontology#Topic -->
+
+    <owl:Class rdf:about="http://example.org/s2a-kg-ontology#Topic"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
