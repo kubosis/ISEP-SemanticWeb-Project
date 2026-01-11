@@ -1,0 +1,43 @@
+services:
+  # 1. The Chatbot Application
+  chatbot:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: chatbot-career-advisor
+    depends_on:
+      - neo4j
+      - qdrant
+    ports:
+      - "7860:7860" # Gradio Interface
+    env_file:
+      - ".env"
+    volumes:
+      - ./app:/app # Live code reloading
+
+  # 2. Neo4j Graph Database
+  neo4j:
+    image: neo4j:2025.11-enterprise
+    container_name: neo4j-career-advisor
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    env_file:
+      - ".env.service.neo4j"
+    volumes:
+      - ./neo4j_data:/data
+      - ./neo4j_dump:/backups
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 3. Qdrant Vector Database
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant-career-advisor
+    ports:
+      - "6333:6333"
+    volumes:
+      - ./qdrant_data:/qdrant/storage
