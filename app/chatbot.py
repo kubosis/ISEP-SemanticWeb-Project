@@ -373,71 +373,79 @@ When a user asks "How do I become a [Job Title]?":
         """
         Handles the full chat interaction:
         User -> LLM -> (Optional Tool Calls) -> LLM -> Response
+        Supports iterative tool calling until LLM provides final answer.
         """
         # 1. Append User Message
         self.messages.append({"role": "user", "content": user_query})
 
-        # 2. First LLM Call (Decide intent)
-        response = self.client.chat.completions.create(
-            model=self.model,
-            messages=self.messages,
-            tools=self.TOOLS_SCHEMA,
-            tool_choice="auto",
-            temperature=0.1,
-        )
-        response_msg = response.choices[0].message
-
         tool_calls_data = []
+        max_iterations = 5  # Prevent infinite loops
 
-        # 3. Check if LLM wants to use tools
-        if response_msg.tool_calls:
-            logger.info("LLM requested tool execution...")
-            self.messages.append(response_msg) # Extend conversation with assistant's decision
-
-            for tool_call in response_msg.tool_calls:
-                function_name = tool_call.function.name
-                function_args = json.loads(tool_call.function.arguments)
-
-                # Execute the internal function
-                function_to_call = self.available_functions[function_name]
-
-                if function_name == "search_job_market":
-                    function_response = function_to_call(query=function_args.get("query"))
-                elif function_name == "search_academic_graph":
-                    function_response = function_to_call(
-                        entity_type=function_args.get("entity_type"),
-                        search_term=function_args.get("search_term")
-                    )
-
-                tool_calls_data.append({
-                    "tool": function_name,
-                    "args": function_args,
-                    "result": function_response
-                })
-
-                # Append Tool Result to conversation
-                self.messages.append({
-                    "tool_call_id": tool_call.id,
-                    "role": "tool",
-                    "name": function_name,
-                    "content": function_response,
-                })
-
-            # 4. Second LLM Call (Synthesize answer from tool outputs)
-            final_response = self.client.chat.completions.create(
+        for iteration in range(max_iterations):
+            # 2. Call LLM
+            response = self.client.chat.completions.create(
                 model=self.model,
                 messages=self.messages,
-                temperature=0.1, # Keep it factual
+                tools=self.TOOLS_SCHEMA,
+                tool_choice="auto",
+                temperature=0.1,
             )
-            final_content = final_response.choices[0].message.content
-        else:
-            # No tools needed (e.g., "Hello")
-            final_content = response_msg.content
+            response_msg = response.choices[0].message
 
-        # 5. Append final response to history
-        self.messages.append({"role": "assistant", "content": final_content})
+            # 3. Check if LLM wants to use tools
+            if response_msg.tool_calls:
+                logger.info(f"LLM requested tool execution (iteration {iteration + 1})...")
+                self.messages.append(response_msg)  # Add assistant's tool request to history
 
-        return ChatResponse(response=final_content, tool_calls=tool_calls_data)
+                # Execute each tool call
+                for tool_call in response_msg.tool_calls:
+                    function_name = tool_call.function.name
+                    function_args = json.loads(tool_call.function.arguments)
+
+                    # Execute the internal function
+                    function_to_call = self.available_functions[function_name]
+
+                    if function_name == "search_job_market":
+                        function_response = function_to_call(query=function_args.get("query"))
+                    elif function_name == "search_academic_graph":
+                        function_response = function_to_call(
+                            entity_type=function_args.get("entity_type"),
+                            search_term=function_args.get("search_term")
+                        )
+                    else:
+                        function_response = json.dumps({"error": f"Unknown function: {function_name}"})
+
+                    tool_calls_data.append({
+                        "tool": function_name,
+                        "args": function_args,
+                        "result": function_response
+                    })
+
+                    # Append Tool Result to conversation
+                    self.messages.append({
+                        "tool_call_id": tool_call.id,
+                        "role": "tool",
+                        "name": function_name,
+                        "content": function_response,
+                    })
+
+                # Continue loop to let LLM process tool results
+                continue
+
+            else:
+                # No more tools needed - LLM provided final answer
+                final_content = response_msg.content
+
+                # Append final response to history
+                self.messages.append({"role": "assistant", "content": final_content})
+
+                return ChatResponse(response=final_content, tool_calls=tool_calls_data)
+
+        # If we hit max iterations, return what we have
+        logger.warning(f"Hit max iterations ({max_iterations}) - forcing completion")
+        error_msg = "I apologize, but I needed to make too many tool calls. Please try rephrasing your question."
+        self.messages.append({"role": "assistant", "content": error_msg})
+        return ChatResponse(response=error_msg, tool_calls=tool_calls_data)
 
     def reset(self):
         """Clears conversation history."""

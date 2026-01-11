@@ -16,10 +16,10 @@ from langchain_openai import OpenAIEmbeddings
 from qdrant_client import QdrantClient
 from qdrant_client.http import models
 
-# --- Configuration ---
+
 QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
 COLLECTION_NAME = "job_market"
-EMBEDDING_MODEL = "text-embedding-3-small"  # Efficient OpenAI model
+EMBEDDING_MODEL = "text-embedding-3-small"
 
 
 @dataclass
@@ -90,7 +90,7 @@ class QdrantIngestor:
     def __init__(self):
         self.client = QdrantClient(url=QDRANT_URL)
         self.embeddings = OpenAIEmbeddings(model=EMBEDDING_MODEL)
-        self.vector_size = 1536  # Standard for text-embedding-3-small
+        self.vector_size = 1536
 
     def create_collection_if_not_exists(self):
         """Ensures the Qdrant collection exists with correct config."""
@@ -116,15 +116,13 @@ class QdrantIngestor:
 
         logger.info(f"Embedding {len(documents)} documents...")
 
-        # 1. Generate Embeddings
         texts = [doc.page_content for doc in documents]
         vectors = self.embeddings.embed_documents(texts)
 
-        # 2. Prepare Points for Qdrant
         points = []
         for i, (doc, vector) in enumerate(zip(documents, vectors)):
             payload = doc.metadata
-            payload["page_content"] = doc.page_content  # Store text in payload for retrieval
+            payload["page_content"] = doc.page_content
 
             points.append(models.PointStruct(
                 id=str(uuid.uuid4()),  # Generate unique ID
@@ -142,8 +140,6 @@ class QdrantIngestor:
 
         logger.success(f"Successfully ingested {len(points)} chunks into '{COLLECTION_NAME}'.")
 
-
-# --- Helper to run ingestion easily ---
 def run_ingestion(folder_path: str):
     """
     Utility function to ingest all files in a folder.
