@@ -10,6 +10,9 @@ import os
 from openai import OpenAI
 from loguru import logger
 from neo4j import GraphDatabase
+from qdrant_client import QdrantClient
+from langchain_openai import OpenAIEmbeddings
+from langchain_qdrant import QdrantVectorStore
 
 from app.utils import OPENAI_API_KEY, OPENAI_EMBEDDING_DEPLOYMENT, OPENAI_DEPLOYMENT, NEO4J_AUTH, NEO4J_URI
 
@@ -131,24 +134,52 @@ When a user asks "How do I become a [Job Title]?":
             auth=NEO4J_AUTH
         )
 
-        logger.success("CareerAdvisorChatbot initialized.")
+        self.qdrant_client = QdrantClient(url=os.getenv("QDRANT_URL", "http://qdrant:6333"))
+        self.embedding_model = OpenAIEmbeddings(model="text-embedding-3-small")
+        self.qdrant_collection = "job_market"
+        self.vector_store = QdrantVectorStore(
+            client=self.qdrant_client,
+            collection_name=self.qdrant_collection,
+            embedding=self.embedding_model
+        )
 
-    # --- Internal Tool Implementations ---
+        logger.success("CareerAdvisorChatbot initialized.")
 
     def _query_qdrant(self, query: str) -> str:
         """
-        [PLACEHOLDER] Connect to Qdrant here.
-        Perform vector search on job postings.
+        Searches the Qdrant vector database using LangChain's wrapper.
         """
         logger.info(f"Tool Action: Querying Qdrant for '{query}'")
-        # TODO: Implement actual Qdrant client call
-        # results = qdrant_client.search(...)
 
-        # Mock response for testing
-        return json.dumps({
-            "found_jobs": ["Junior Data Scientist", "AI Researcher"],
-            "top_skills": ["Python", "Machine Learning", "SQL", "Neo4j"]
-        })
+        try:
+            # 1. Check if collection exists (using raw client for safety)
+            if not self.qdrant_client.collection_exists(self.qdrant_collection):
+                return json.dumps({"error": "Job database is empty."})
+
+            # 2. Perform Search
+            # LangChain handles the embedding of 'query' automatically here
+            results = self.vector_store.similarity_search_with_score(
+                query=query,
+                k=4  # Top 4 results
+            )
+
+            if not results:
+                return json.dumps({"message": "No relevant job postings found."})
+
+            # 3. Format Results
+            found_jobs = []
+            for doc, score in results:
+                found_jobs.append({
+                    "source": doc.metadata.get("source", "Unknown"),
+                    "score": round(score, 3),
+                    "content": doc.page_content[:500] + "...",
+                })
+
+            return json.dumps(found_jobs)
+
+        except Exception as e:
+            logger.error(f"Qdrant Search Error: {e}")
+            return json.dumps({"error": "Failed to search job market database.", "details": str(e)})
 
     def _query_neo4j(self, entity_type: str, search_term: str) -> str:
         """

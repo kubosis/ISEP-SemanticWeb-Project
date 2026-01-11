@@ -23,6 +23,11 @@ ENV PATH="/project/.venv/bin:$PATH"
 # Copy the app source code folder into /project/app
 COPY app ./app
 
+RUN mkdir -p /gradio_cache && chmod 777 /gradio_cache
+
+# 2. Tell Gradio to use this directory for the FRPC binary
+ENV XDG_CACHE_HOME=/gradio_cache
+
 # Gradio port
 EXPOSE 7860
 
