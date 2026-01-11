@@ -4,7 +4,7 @@ brief: Job Market Data Ingestion (Chunking + Qdrant Upload)
 """
 import os
 import uuid
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, List
 
