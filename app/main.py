@@ -1,50 +1,14 @@
 import os
+import sys
 import gradio as gr
 from dotenv import load_dotenv
 from app.chatbot import CareerAdvisorChatbot
 
 load_dotenv()
 
+chatbot = CareerAdvisorChatbot()
 
-def main():
-    chatbot = CareerAdvisorChatbot()
-
-    def chat_fn(user_query: str, history: list):
-        """
-        Main function called by Gradio for every message.
-        """
-        if not history:
-            chatbot.reset()
-
-        result = chatbot.chat(user_query)
-
-        final_response = result.response
-        tool_calls = result.tool_calls
-
-        # Append Tool/Debug Info
-        if tool_calls and os.getenv("ENV", "prod").lower() == "dev":
-            final_response += "\n\n--- 🛠 **[Developer Info] Agent used these tools** ---\n"
-            for call in tool_calls:
-                tool_name = call.get('tool')
-                args = call.get('args')
-                tool_output = str(call.get('result'))
-
-                if len(tool_output) > 300:
-                    tool_output = tool_output[:300] + "... [truncated]"
-
-                final_response += f"**🔹 Tool:** `{tool_name}`\n"
-                final_response += f"**Arguments:** `{args}`\n"
-                final_response += f"**DB Output:** _{tool_output}_\n\n"
-
-        return final_response
-
-    def authenticate(username, password):
-        valid_username = os.environ.get("GRADIO_USERNAME",)
-        valid_password = os.environ.get("GRADIO_PASSWORD",)
-        return username == valid_username and password == valid_password
-
-    # Custom CSS to force full screen
-    custom_css = """
+custom_css = """
     /* Remove default margins and padding */
     body, html {
         margin: 0;
@@ -86,11 +50,57 @@ def main():
     }
     """
 
+
+def chat_fn(user_query: str, history: list):
+    if not history:
+        chatbot.reset()
+
+    result = chatbot.chat(user_query)
+    final_response = result.response
+    tool_calls = result.tool_calls
+
+    if tool_calls and os.getenv("ENV", "prod").lower() == "dev":
+        final_response += "\n\n--- 🛠 **[Developer Info] Agent used these tools** ---\n"
+        for call in tool_calls:
+            tool_name = call.get('tool')
+            args = call.get('args')
+            tool_output = str(call.get('result'))
+
+            if len(tool_output) > 300:
+                tool_output = tool_output[:300] + "... [truncated]"
+
+            final_response += f"**🔹 Tool:** `{tool_name}`\n"
+            final_response += f"**Arguments:** `{args}`\n"
+            final_response += f"**DB Output:** _{tool_output}_\n\n"
+
+    return final_response
+
+
+def authenticate(username, password):
+    valid_username = os.environ.get("GRADIO_USERNAME", "admin")
+    valid_password = os.environ.get("GRADIO_PASSWORD", "admin")
+    return username == valid_username and password == valid_password
+
+
+def main():
+    # Check share setting
+    share_enabled = os.getenv("GRADIO_SHARE", "False").lower() == "true"
+
+    print("=" * 60)
+    print("Starting Academic Career Advisor Chatbot")
+    print("=" * 60)
+    print(f"Share Mode: {'ENABLED' if share_enabled else 'DISABLED'}")
+    print(f"Cache Directory: {os.getenv('XDG_CACHE_HOME', 'default')}")
+    print(f"Server: http://0.0.0.0:7860")
+    print("=" * 60)
+    sys.stdout.flush()
+
+    # Custom CSS for full screen
+
     with gr.Blocks(
             fill_height=True,
-            css=custom_css
+            title="Academic Career Advisor",
     ) as demo:
-
         gr.ChatInterface(
             fn=chat_fn,
             title="🎓 Academic Career Advisor",
@@ -106,20 +116,30 @@ def main():
                 scale=7
             ),
             fill_height=True,
-            chatbot=gr.Chatbot(height=700),  # Set minimum height
+            chatbot=gr.Chatbot(height=700),
         )
 
-    print("Starting Gradio Server on port 7860...")
-    print("Chatbot will be accessible at http://localhost:7860")
-    share_enabled = os.getenv("GRADIO_SHARE", "False").lower() == "true"
-    demo.launch(
-        server_name="0.0.0.0",
-        server_port=7860,
-        auth=authenticate,
-        show_error=True,
-        theme = gr.themes.Soft(),
-        share = share_enabled
-    )
+    try:
+        print("Launching Gradio interface...")
+        sys.stdout.flush()
+
+        demo.launch(
+            server_name="0.0.0.0",
+            server_port=7860,
+            auth=authenticate,
+            show_error=True,
+            share=share_enabled,
+            debug=True,
+            quiet=False,
+            css=custom_css,
+            inbrowser=False,
+        )
+    except Exception as e:
+        print(f"Error launching Gradio: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.stdout.flush()
+        raise
 
 
 if __name__ == "__main__":
