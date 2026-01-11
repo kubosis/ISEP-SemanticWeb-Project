@@ -4,7 +4,7 @@ brief: Simplified Academic Career Advisor Chatbot
 """
 import dataclasses
 import json
-from typing import Optional, List, Dict, Any
+from typing import List, Dict, Any
 import os
 
 from openai import OpenAI
