@@ -14,7 +14,7 @@ from qdrant_client import QdrantClient
 from langchain_openai import OpenAIEmbeddings
 from langchain_qdrant import QdrantVectorStore
 
-from app.utils import OPENAI_API_KEY, OPENAI_EMBEDDING_DEPLOYMENT, OPENAI_DEPLOYMENT, NEO4J_AUTH, NEO4J_URI
+from app.utils import OPENAI_API_KEY, OPENAI_DEPLOYMENT, NEO4J_AUTH, NEO4J_URI
 
 
 @dataclasses.dataclass
