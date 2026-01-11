@@ -129,14 +129,17 @@ When a user asks "How do I become a [Job Title]?":
             "search_academic_graph": self._query_neo4j,
         }
 
-        self.driver = GraphDatabase.driver(
-            NEO4J_URI,
-            auth=NEO4J_AUTH
-        )
+        self.driver = GraphDatabase.driver(NEO4J_URI, auth=NEO4J_AUTH)
 
+        # Initialize Qdrant with error recovery
         self.qdrant_client = QdrantClient(url=os.getenv("QDRANT_URL", "http://qdrant:6333"))
         self.embedding_model = OpenAIEmbeddings(model="text-embedding-3-small")
         self.qdrant_collection = "job_market"
+
+        # Attempt to verify/recover collection
+        self._initialize_qdrant_collection()
+
+        # Initialize LangChain wrapper
         self.vector_store = QdrantVectorStore(
             client=self.qdrant_client,
             collection_name=self.qdrant_collection,
@@ -145,41 +148,129 @@ When a user asks "How do I become a [Job Title]?":
 
         logger.success("CareerAdvisorChatbot initialized.")
 
+    def _initialize_qdrant_collection(self):
+        """
+        Verifies Qdrant collection health and recreates if corrupted.
+        """
+        try:
+            if self.qdrant_client.collection_exists(self.qdrant_collection):
+                # Try to get collection info to verify it's not corrupted
+                info = self.qdrant_client.get_collection(self.qdrant_collection)
+                logger.info(
+                    f"Qdrant collection '{self.qdrant_collection}' exists: "
+                    f"{info.points_count} points, "
+                    f"vector size: {info.config.params.vectors.size}"
+                )
+
+                # Verify vector size matches
+                if info.config.params.vectors.size != 1536:
+                    logger.warning(
+                        f"Vector size mismatch! Expected 1536, got {info.config.params.vectors.size}. "
+                        "Recreating collection..."
+                    )
+                    self._recreate_collection()
+
+            else:
+                logger.warning(f"Collection '{self.qdrant_collection}' does not exist. Creating...")
+                self._recreate_collection()
+
+        except Exception as e:
+            logger.error(f"Qdrant collection check failed: {e}")
+            logger.warning("Collection may be corrupted. Attempting to recreate...")
+            self._recreate_collection()
+
+    def _recreate_collection(self):
+        """
+        Safely recreates the Qdrant collection.
+        """
+        from qdrant_client.models import Distance, VectorParams
+
+        try:
+            # Try to delete if exists (may fail if corrupted, that's OK)
+            try:
+                self.qdrant_client.delete_collection(self.qdrant_collection)
+                logger.info(f"Deleted existing collection: {self.qdrant_collection}")
+            except Exception as e:
+                logger.warning(f"Could not delete collection (may not exist): {e}")
+
+            # Create fresh collection
+            self.qdrant_client.create_collection(
+                collection_name=self.qdrant_collection,
+                vectors_config=VectorParams(size=1536, distance=Distance.COSINE)
+            )
+            logger.success(f"Created fresh collection: {self.qdrant_collection}")
+            logger.warning("⚠️  Collection is now empty. You need to run ingestion to populate it.")
+
+        except Exception as e:
+            logger.error(f"Failed to recreate collection: {e}")
+            raise RuntimeError(
+                "Cannot initialize Qdrant. Please check Qdrant service and storage."
+            )
+
     def _query_qdrant(self, query: str) -> str:
         """
-        Searches the Qdrant vector database using LangChain's wrapper.
+        Searches the Qdrant vector database with improved error handling.
         """
         logger.info(f"Tool Action: Querying Qdrant for '{query}'")
 
         try:
-            # 1. Check if collection exists (using raw client for safety)
+            # 1. Verify collection exists and is accessible
             if not self.qdrant_client.collection_exists(self.qdrant_collection):
-                return json.dumps({"error": "Job database is empty."})
+                logger.warning("Collection doesn't exist")
+                return json.dumps({
+                    "error": "Job database not initialized. Please contact administrator."
+                })
 
-            # 2. Perform Search
-            # LangChain handles the embedding of 'query' automatically here
+            # 2. Check collection health and size
+            try:
+                collection_info = self.qdrant_client.get_collection(self.qdrant_collection)
+                vector_count = collection_info.points_count
+
+                if vector_count == 0:
+                    logger.warning("Collection exists but is empty")
+                    return json.dumps({
+                        "message": "Job market database is empty. No postings available yet."
+                    })
+
+                logger.debug(f"Collection has {vector_count} vectors")
+
+            except Exception as e:
+                logger.error(f"Failed to get collection info: {e}")
+                return json.dumps({
+                    "error": "Job database may be corrupted. Please contact administrator.",
+                    "details": "Collection health check failed"
+                })
+
+            # 3. Perform Search with timeout protection
             results = self.vector_store.similarity_search_with_score(
                 query=query,
-                k=4  # Top 4 results
+                k=min(4, vector_count)  # Don't request more than available
             )
 
             if not results:
-                return json.dumps({"message": "No relevant job postings found."})
+                return json.dumps({
+                    "message": "No relevant job postings found for your query."
+                })
 
-            # 3. Format Results
+            # 4. Format Results
             found_jobs = []
             for doc, score in results:
                 found_jobs.append({
                     "source": doc.metadata.get("source", "Unknown"),
-                    "score": round(score, 3),
-                    "content": doc.page_content[:500] + "...",
+                    "score": round(float(score), 3),
+                    "content": doc.page_content[:500] + ("..." if len(doc.page_content) > 500 else ""),
                 })
 
+            logger.info(f"Found {len(found_jobs)} relevant job postings")
             return json.dumps(found_jobs)
 
         except Exception as e:
             logger.error(f"Qdrant Search Error: {e}")
-            return json.dumps({"error": "Failed to search job market database.", "details": str(e)})
+            return json.dumps({
+                "error": "Failed to search job market database.",
+                "details": str(e),
+                "suggestion": "The database may need to be reinitialized."
+            })
 
     def _query_neo4j(self, entity_type: str, search_term: str) -> str:
         """

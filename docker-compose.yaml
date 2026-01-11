@@ -9,11 +9,13 @@ services:
       - neo4j
       - qdrant
     ports:
-      - "7860:7860" # Gradio Interface
+      - "7860:7860"
     env_file:
       - ".env"
-    volumes:
-      - ./app:/app # Live code reloading
+    stdin_open: true
+    tty: true
+    environment:
+      - PYTHONUNBUFFERED=1
 
   # 2. Neo4j Graph Database
   neo4j:
