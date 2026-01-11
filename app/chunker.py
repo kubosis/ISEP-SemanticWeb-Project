@@ -6,7 +6,7 @@ import os
 import uuid
 from dataclasses import dataclass, asdict
 from pathlib import Path
-from typing import Any, Optional, List
+from typing import Any, List
 
 from loguru import logger
 from langchain_core.documents import Document
