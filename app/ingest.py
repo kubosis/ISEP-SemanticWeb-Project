@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'app'))
 
-from app.chunker import run_ingestion
+from chunker import run_ingestion
 from loguru import logger
 
 load_dotenv()
