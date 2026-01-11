@@ -43,7 +43,13 @@
         <ObjectProperty IRI="#hasRequirement"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasStudentID"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isPartOfProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTakenBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#offeredInSemester"/>
@@ -82,6 +88,9 @@
         <NamedIndividual IRI="#CS102"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CS203"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Core_CS101"/>
     </Declaration>
     <Declaration>
@@ -113,6 +122,10 @@
     <ClassAssertion>
         <Class IRI="#Course"/>
         <NamedIndividual IRI="#CS102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#CS203"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CoreRequirement"/>
@@ -157,6 +170,11 @@
         <NamedIndividual IRI="#CS101"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <NamedIndividual IRI="#CS203"/>
+        <NamedIndividual IRI="#CS102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isPartOfProgram"/>
         <NamedIndividual IRI="#Core_CS101"/>
         <NamedIndividual IRI="#BSc_ComputerScience"/>
@@ -181,6 +199,20 @@
         <NamedIndividual IRI="#CS101"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
     </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStudentID"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <ObjectProperty IRI="#takesCourse"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasStudentID"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+    </TransitiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#completedCourse"/>
         <Class IRI="#Student"/>
@@ -194,7 +226,15 @@
         <Class IRI="#AcademicProgram"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStudentID"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPartOfProgram"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTakenBy"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -218,8 +258,19 @@
         <Class IRI="#DegreeRequirement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStudentID"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isPartOfProgram"/>
         <Class IRI="#AcademicProgram"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <Class IRI="#Student"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#offeredInSemester"/>

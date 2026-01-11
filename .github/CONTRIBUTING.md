@@ -30,8 +30,13 @@ Welcome! We're excited that you're interested in contributing to our Study Path 
 │ └── backend/                                   # API server & SPARQL query endpoint written in python+fastapi
 ├── knowledge_graph/                             # The core Knowledge Graph files 
 │ ├── ontology/                                  # .ttl or .owl files defining the schema 
+│ │   ├── skills_thesaurus.ttl                   # The Thesaurus (Instances of skills using SKOS). Note: use ESCO.
+│ │   └── career_atlas.ttl                       # Our custom definitions
 │ ├── data/                                      # .rdf, .ttl, .jsonld instance data 
 │ ├── raw_data/                                  # folder to store raw data && partially cleaned data
+│ ├── mappings/                                  # <--- CSVs or JSONs mapping raw terms to URIs
+│ │  ├── skills_map.json                         # e.g.: "machine learning" -> <http://data.europa.eu/esco/skill/...>
+│ │  └── course_map.json
 │ └── queries/                                   # .sparql files for reusable queries 
 ├── scripts/                                     # Data ingestion, ETL, and validation scripts 
 ├── .gitignore \

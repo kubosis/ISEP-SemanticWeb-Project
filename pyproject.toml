@@ -3,9 +3,23 @@ name = "isep-semanticweb-project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.12"
 dependencies = [
+    "gradio>=6.3.0",
+    "langchain>=1.2.3",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.7",
+    "langchain-openai>=1.1.7",
+    "langchain-qdrant>=1.1.0",
+    "loguru>=0.7.3",
+    "neo4j>=6.0.3",
+    "openai>=2.15.0",
     "pip>=25.0.1",
+    "pypdf>=6.6.0",
+    "python-dotenv>=1.2.1",
+    "qdrant-client>=1.16.2",
     "rdflib>=6.3.2",
     "spacy>=3.7.5",
+    "tiktoken>=0.12.0",
+    "unstructured>=0.18.27",
 ]
