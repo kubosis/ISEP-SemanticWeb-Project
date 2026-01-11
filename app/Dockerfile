@@ -14,23 +14,35 @@ RUN pip install uv
 # Now valid because context is root
 COPY pyproject.toml uv.lock ./
 
-# Install dependencies into .venv
+FROM python:3.13-slim
+
+WORKDIR /project
+
+# Install system dependencies + curl/wget for frpc download
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    wget \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install uv
+
+COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-install-project --no-dev
 
-# CRITICAL: Add the virtual environment to PATH so 'python' command uses it
 ENV PATH="/project/.venv/bin:$PATH"
 
-# Copy the app source code folder into /project/app
 COPY app ./app
 
-RUN mkdir -p /gradio_cache && chmod 777 /gradio_cache
+# Create cache directory with proper permissions
+RUN mkdir -p /gradio_cache && chmod -R 777 /gradio_cache
 
-# 2. Tell Gradio to use this directory for the FRPC binary
+# Set Gradio cache location
 ENV XDG_CACHE_HOME=/gradio_cache
+ENV GRADIO_TEMP_DIR=/gradio_cache
 
-# Gradio port
+# Expose Gradio port
 EXPOSE 7860
 
-# Run the app
-# Since WORKDIR is /project, this correctly finds app/main.py
 CMD ["python", "-m", "app.main"]
