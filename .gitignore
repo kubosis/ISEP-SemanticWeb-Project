@@ -107,6 +107,7 @@ celerybeat.pid
 
 # Environments
 .env
+.env.service.neo4j
 .venv
 env/
 venv/
@@ -140,3 +141,7 @@ mlartifacts/
 outputs/
 
 *.zip
+
+qdrant_data/
+neo4j_data/
+neo4j_dump/
